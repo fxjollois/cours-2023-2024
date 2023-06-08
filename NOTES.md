@@ -14,15 +14,15 @@
         - Fin du TP à rendre (3h)
 
 - SAE Intégration
-    - Obligation d'utiliser des APIs justement
-    - Faire plus dataviz et API
+    - Obligation d'utiliser des APIs justement ??
+    - Faire plus dataviz et API ??
     - A priori : 9h de TP (3 séances de 3h) + 6h de suivi
         1. Présentation des données à intégrer et du data-warehouse dans lequelle les mettre
         2. Réponses aux questions
         3. Présentation des résultats
 
 - NoSQL :
-    - MongoDB sûr + Neo4J ?
+    - MongoDB sûr (+ Neo4J ?)
     - 2 possibilités (21h/étudiant) :
         - 7 séances de 3 heures de TP :
             - CM sur le NoSQL en général (sur 3 heures ??)
