@@ -65,34 +65,34 @@
 - DU Analyste Data Science : rien à changer pour le moment
 
 - M1 DCI - Extraction de connaissances
-  - Faire une vraie séance de cours sur les modèles autres
-  - Prévoir 2 TPs notés peut-être
+    - Faire une vraie séance de cours sur les modèles autres
+    - Prévoir 2 TPs notés peut-être
 
 - M1 AMCD/MLSD - Système pour Data Science
-  - Ajouter un peu plus sur système de base
-  - Ajouter GIT
+    - Ajouter un peu plus sur système de base
+    - Ajouter GIT
 
 - INSA Rouen - Intro au Machine Learning
-  - Première séance : faire une vraie introduction au Machine Learning, avec éventuellement une étude de cas
-  - Programme éventuel :
-    - Jour 1 : Intro (ML, Apprentissage non-supervisé, étude de cas...) - ACP
-    - Jour 2 : Classif (k-means, CAH) - Autres méthodes de classif (SOM ?, DBSCAN, BIRCH ? autre ?) + **Evaluation des résultats**
-    - Jour 3 : Autres méthodes (MDS, NMF, ?) - TP noté ?
+    - Première séance : faire une vraie introduction au Machine Learning, avec éventuellement une étude de cas
+    - Programme éventuel :
+        - Jour 1 : Intro (ML, Apprentissage non-supervisé, étude de cas...) - ACP
+        - Jour 2 : Classif (k-means, CAH) - Autres méthodes de classif (SOM ?, DBSCAN, BIRCH ? autre ?) + **Evaluation des résultats**
+        - Jour 3 : Autres méthodes (MDS, NMF, ?) - TP noté ?
 
 - TC Cherbourg Stats :
-  - Découpage du cours en petite séquence de 15 à 30 minutes
-  - Faire des séances 15 à 30 minutes, suivies de 1h d'exercice
-  - Tableur : simplifier le TD2 (attention à logements autres par exemple)
-  - Ajouter un ou deux TPs de manipulation Excel avec des graphiques
-  - Programme des 9 séances
-    1. Rappel de stats desc + 1ère manipulation dans un tableur (calculs et graphiques ?)
-    2. Pourquoi la statistique inférentielle ? loi + IC
-    3. Loi de Bernouilli + exercices sur tableur (?)
-    4. Loi Binomiale + exercices sur tableur (?)
-    5. Loi de Poisson + exercices sur tableur (?)
-    6. Loi Normale + exercices sur tableur (?)
-    7. Pourquoi pas ne pas pousser jusqu'au test ?
-    8. TP données réelles
-    9. Evaluation finale
+    - Découpage du cours en petite séquence de 15 à 30 minutes
+    - Faire des séances 15 à 30 minutes, suivies de 1h d'exercice
+    - Tableur : simplifier le TD2 (attention à logements autres par exemple)
+    - Ajouter un ou deux TPs de manipulation Excel avec des graphiques
+    - Programme des 9 séances
+        1. Rappel de stats desc + 1ère manipulation dans un tableur (calculs et graphiques ?)
+        2. Pourquoi la statistique inférentielle ? loi + IC
+        3. Loi de Bernouilli + exercices sur tableur (?)
+        4. Loi Binomiale + exercices sur tableur (?)
+        5. Loi de Poisson + exercices sur tableur (?)
+        6. Loi Normale + exercices sur tableur (?)
+        7. Pourquoi pas ne pas pousser jusqu'au test ?
+        8. TP données réelles
+        9. Evaluation finale
 
 
