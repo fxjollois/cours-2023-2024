@@ -53,5 +53,13 @@ Lien vers les cours :
 
 - Intégration : https://docs.google.com/presentation/d/e/2PACX-1vSvjB8XvSb5UaHnQKjZO5fHsAYCiaPC6BTgRoSjSvR6MzFiXMNBRsiXSJAaO2HeVZOyPTa65eoHyMrg/pub?start=false&loop=false&delayms=3000
 
+Quelques bases de données pour changer :
+https://github.com/JannikArndt/PostgreSQLSampleDatabase
+https://github.com/hurshd0/aviano-db
+https://github.com/JavierCanon/Microsoft-Sql-Server-Databases-Samples
+https://github.com/fortunewalla/airportdb
+https://www.sqlskills.com/sql-server-resources/sql-server-demos/
+https://docs.yugabyte.com/preview/sample-data/
+
 -->
 
