@@ -1,26 +1,5 @@
 # Quelques notes pour 2023-2024
 
-- SID :
-    - Remarques :
-        - Rappels SQL : découper en création puis requêtage, avec cours
-        - TP Intégration : découper en plusieurs demandes, plus explicites
-        - Utiliser SQL Server ! En tout cas, ne plus utiliser SQLite
-    - Programme : 6 séances de 3 heures
-        - Rappels SQL 1 : Cours création DDL-DML (1h) + TP (1h30) + évaluation rapide
-        - Rappels SQL 2 : Cours requêtage DQL (1h) + TP (1h30) + évaluation rapide
-        - Intro SID & Modélisation (2h) + TD rétro-engineering (1h)
-        - Reporting (1h) + TP Tableau avec rendu (2h)
-        - Intégration de données : Cours (1h30) + Début du TP (1h30)
-        - Fin du TP à rendre (3h)
-
-- SAE Intégration
-    - Obligation d'utiliser des APIs justement ??
-    - Faire plus dataviz et API ??
-    - A priori : 9h de TP (3 séances de 3h) + 6h de suivi
-        1. Présentation des données à intégrer et du data-warehouse dans lequelle les mettre
-        2. Réponses aux questions
-        3. Présentation des résultats
-
 - NoSQL :
     - MongoDB sûr (+ Neo4J ?)
     - 2 possibilités (21h/étudiant) :
