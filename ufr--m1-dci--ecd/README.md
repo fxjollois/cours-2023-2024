@@ -22,14 +22,15 @@
 
 - [Sujet du TP](sujet-tp.html)
 
+<!--
 Lien vers les plateformes de l'UFR Math-Info : 
 - [JupyterHub](https://jupyter.ens.math-info.univ-paris5.fr/)
 - [RStudio](https://rstudio.ens.math-info.univ-paris5.fr/)
+-->
 
 <!--
 10 séances de 3 heures avec comme sujet : dataming/textmining
 sous python ?
-
 
 3. Analyse de données (ACP, AFC...)
 4. Clustering

@@ -6,8 +6,7 @@ Ce site regroupe l'ensemble des documents que j'utilise dans mes cours pour l'an
 
 <!--
 
-- SID
-- SAE Intégration de données
+- SAE Collecte automatisée de données
 
 - NoSQL
 - SAE Migration de données

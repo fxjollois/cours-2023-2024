@@ -2,6 +2,8 @@
 
 ## BUT 2 Techniques de Commercialisation
 
+- [Séance 1 - Rappels de Statistiques](seance1--rappels-stats.pdf)
+
 <!--
 
 - TC Cherbourg Stats :
@@ -12,13 +14,12 @@
     - Programme des 9 séances
         1. Rappel de stats desc + 1ère manipulation dans un tableur (calculs et graphiques ?)
         2. Pourquoi la statistique inférentielle ? loi + IC
-        3. Loi de Bernouilli + exercices sur tableur (?)
-        4. Loi Binomiale + exercices sur tableur (?)
-        5. Loi de Poisson + exercices sur tableur (?)
-        6. Loi Normale + exercices sur tableur (?)
-        7. Pourquoi pas ne pas pousser jusqu'au test ?
-        8. TP données réelles
-        9. Evaluation finale
+        3. Loi de Bernouilli et Loi Binomiale + exercices sur tableur (?)
+        4. Loi de Poisson + exercices sur tableur (?)
+        5. Loi Normale + exercices sur tableur (?)
+        6. Test
+        7. TP données réelles
+        8. Evaluation finale
 
 Fiche module dans le PN :
 
