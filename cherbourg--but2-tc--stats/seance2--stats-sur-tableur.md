@@ -1,0 +1,221 @@
+# Statistiques descriptives sur tableur
+
+Nous allons travailler sur les données contenu dans le fichier `tips`, dont vous devez télécharger une version selon votre logiciel :
+
+- [Format Excel](tips.xlsx)
+- [Format Libre Office](tips.ods)
+- [Format Numbers](tips.numbers)
+
+## Analyse d'une variable quantitative
+
+### Préparation de la feuille
+
+- Créer une nouvelle feuille (que vous nommerez `montant` par exemple)
+- En case `A1`, écrivez *Montant de la table* (et mettez le en gras)
+- En case `A3` et `A4`, écrivez *Moyenne* et *Ecart-type*
+- En cas `A6` et en dessous, écrivez *Minimum*, *Q1*, *Médiane*, *Q3* et *Maximum*
+- Enfin, dans la case `A12`, vous écrivez *%* et à droite (case `B12`) *Centile*. En case `A13` et en dessous, écrivez *1, 10, 90, 99*
+
+### Ajout des calculs
+
+- Dans la case `B3`, écrivez la formule suivante : `=MOYENNE(tips.a:a)`
+    - notez qu'il est possible d'écrire en minuscule ou en majuscule les noms des fonctions
+- Pour l'écart-type, c'est la fonction `ecartype()` qu'il faut utiliser
+- Pour minimum, maximum et médiane, il existe les fonction `MIN()`, `MAX()` et `MEDIANE()`
+- Pour les quartiles, nous avons la fonction `QUARTILE()`, qui demande en premier la plage des données (ici `tips.A:A`) et le type de quartile (0 : minimum, 1 : Q1, 2 : médiane, 3 : Q3, 4 : maximum)
+- Pour les centiles, il existe la fonction `CENTILE()` qui prend 2 paramètres :
+    - la plage des données (ici toujours `tips.A:A`)
+    - la valeur du centile (entre 0 et 1). Nous allons donc écrire la formule suivante dans la cellule `B13`, qu'il faudra dupliquer sur les cellules en dessous donc
+```
+=CENTILE(tips.A:A;A13/100)
+```
+
+> Avec un peu de mise en page, nous avons un ensemble d'informations permettant déjà de mieux connaître la distribution du montant payé.
+
+### Graphique
+
+Il n'existe pas de fonction permettant de réaliser un histogramme directement dans les tableurs. Pour une variable quantitative, nous allons réaliser un diagramme en barres de la transformation en variable ordinale.
+
+Pour réaliser cela, nous allons créer un tableau. Ecrivez en cellule `D3` à `F3` les mots suivants : *Seuil*, *Occurences*, *Etiquette*
+
+#### Première étape
+
+Pour faire notre tableau, nous devons réaliser une première étape de création des valeurs seuils. Nous allons choisir comme seuils, à placer dans le tableau en `D4` et en dessous, les valeurs *0, 10, 15, 20, 5, 30, 35 et ">35"*.
+
+#### Deuxième étape
+
+Pour calculer le nombre de valeurs entre 2 seuils, nous allons utiliser la fonction `FREQUENCE()`. Elle prend en première paramètre les données (toujours `tips.A:A`) et en deuxième paramètre, la liste des seuils. Ecrivez la formule suivante en cellul `E4` : 
+
+```
+=FREQUENCE(tips.A:A;D4:D11)
+```
+
+Une fois cela fait, vous remarquerez que des valeurs se sont ajoutées sur les cellules en dessous. La valeur en `E4` est 0 car aucune valeur n'est inférieure à 0 dans les données. Ensuite, la valeur dans la cellule `E5` indique qu'il y a 17 valeurs entre 0 et 10. Et ainsi de suite. La somme des valeurs entre `E4` et `E11` est bien égale à 244 (*i.e.* le nombre de lignes du tableau).
+
+#### Troisième étape
+
+Nous allons créer automatiquement des étiquettes pour chaque modalité. Pour cela, écrivez en cellule `F5` la formule suivante :
+
+```
+=CONCAT("Entre ";D4;" et ";D5)
+```
+
+Une fois cela fait, dupliquez à l'aide de la souris cette formule aux cellules situées en dessous (clic droit maintenu sur le coin inférieur droit à la cellule et déplacer vers le bas). Vous pouvez éventuellement changez le texte de la dernière étiquette pour mettre seulement *">35"* par exemple.
+
+#### Quatrième étape
+
+Sélectionner les occurences (cellules `E5` à `E11`) et cliquer dans le menu *Insertion* -> *Diagramme* (ou sur l'icône dédiée). On va garder comme type de diagramme celui en *colonne*. Dans la partie *Séries de données*, après avoir cliquer dans la zone *Catégories*, cliquez sur l'icône à droite pour sélectionner la plage `F5:F11` (ou écrivez directement `montant.F5:F11`). Puis cliquez sur *Terminer*.
+
+> Nous avons la répartition des valeurs selon des intervalles dont nous avons choisi les seuils.
+
+On peut améliorer ce graphique en modifiant les libellés des axes, en ajoutant un titre... N'héistez pas à tester.
+
+### A FAIRE
+
+> Reproduisez les mêmes opérations pour la variable `tip` (*pourboire*) dans une nouvelle feuille
+
+
+## Analyse d'une variable qualitative
+
+On va faire ici une première versio *à la main*. Nous verrons plus tard comment faire autrement.
+
+### Partie numérique
+
+- Créer une nouvelle feuille (que vous nommerez `jour` par exemple)
+- En case `A1`, écrivez *Jour de la semaine* (et mettez le en gras)
+- En case `A3`, écrivez *Jour* et en `A4` *Nombre de tables*
+- On connaît les modalités donc on va écrire directement *Thur*, *Fri*, *Sat* et *Sun* dans les cellules `A4` à `A7`.
+- Dans la cellule `B4`, nous allons écrire la formule suivante qui calculer le nombre de fois qu'apparaît la valeur de la cellule `A4` dans la colonne `E` de la feuille `tips` :
+```
+=NB.SI(tips.E:E;A4)
+```
+- Dupliquer cette formule aux cellules en dessous
+- Ecrivez dans la case `C3` le terme *Proportion*
+- Dans la cellule `C4`, nous allons calculer la part de la cellule `B4` sur la somme des cellules `B4` à `B7`, en utilisant la formule suivante :
+```
+=B4/SOMME($B$4:$B$7)
+```
+    - Les `$` vont permettre de conserver les valeurs `B4` et `B7` de la formule lorsqu'on va la dupliquer aux cellules du dessous.
+- Il est possible de  mettre au format pourcentage (en cliquant sur *%* dans le menu ou dans *Format* -> *Numérique* -> *Pourcentage*)
+
+### Réalisation d'un diagramme en barres ou circulaire
+
+De la même façon que précédemment, vous pouvez réaliser un diagramme en barres en sélectionnant soit la plage des occurences, soit celles de proportions.
+
+> Réaliser les deux types de graphiques
+
+### A FAIRE
+
+> Reproduisez ces opérations pour les variables `sex` et `size` dans une nouvelle feuille à chaque fois
+
+
+## Analyse du lien entre deux variables quantitatives
+
+### Partie numérique
+
+- Créer une nouvelle feuille (que vous nommerez `montant-tip` par exemple)
+- En case `A1`, écrivez *Lien entre montant et pourboire* (et mettez en gras)
+- En case `A3`, écrivez *Corrélation* et en case `A4` la formule suivante :
+```
+=COEFFICIENT.CORRELATION(tips.A:A;tips.B:B)
+```
+
+### Création du nuage de points
+
+- Cliquez sur *Insertion* -> *Diagramme*
+- Choississez *XY (Dispersion)*
+- Dans la partie *Plage de données*, écrivez `tips.A:B` et choisir *Séries de données en colonnes*
+
+> On obtient notre nuage de points
+
+### A FAIRE
+
+> Réaliser le nuage de points avec le nombre de convives à la table (`size`) en X et le montant payé en Y dans une nouvelle feuille
+
+
+## Analyse du lien entre deux variables qualitatives
+
+### Partie numérique
+
+Nous pourrions faire comme précédemment, mais cela prendrait du temps et ne serait pas automatique (en cas d'ajout d'une modalité - un jour de la semaine par exemple). Nous allons utiliser une fonctionnalité très utile des tableurs, à savoir le *Tableau Croisé Dynamique* ou la *Table Dynamique* (dénomination différente selon le talbeur utilisé).
+
+- Dans la feuille `tips`, sélectionnez les colonnes `A` à `G`
+- Dans le menu, choississez *Insertion* -> *Table Dynamique*
+- Cliquez sur *OK* (on va garder la sélection déjà faite)
+- Glissez-déplacez `day` dans l'espace *Champs de ligne* et `sex` dans *Champs de colonnes*
+- Dans le *Champs de données*, on peut choisir `total_bill` par exemple. Vous voyez que par défaut, l'opération associé est la *Somme*. 
+- Double-cliquez sur *Somme - total_bill* et sélectionnez *Nombe* (puis *OK*)
+- Cliquez sur *OK*
+
+> Dans une nouvelle feuille, nous avons maintenant la table de contingence entre le jour de la semaine et le sexe de la personne qui paie la note.
+
+Dans ce tableau, on a même un filtre automatique sur chaque variable (en ligne et en colonne).
+
+Renommez cette feuille en lui donnant le titre `jour-sexe` par exemple.
+
+### Création des profils lignes
+
+Si nous souhaitons avoir les profils lignes, nous allons devoir *à la main*. 
+
+- Pour cela, faites un copier-coller du tableau en placant la copie en cellule `A10`
+- Dans la cellule `B12`, écrivez la formule suivante
+```
+=B3/$D3
+```
+    - le `$` est important ici pour la duplication aux autres cellules que nous allons faire ensuite
+- Dupliquer cette formule à la cellule `C12` en premier, puis aux cellules `B13` à `C16`
+- Sélectionner les nouvelles valeurs calculées pour les mettre en pourcentage
+
+> On remarque qu'ainsi, en général (ligne du bas), la répartition est 1/3 des notes payées par des femmes et 2/3 payées par des hommes. Par contre, on remarque de grosses différences entre les jours de la semaine : la semaine, c'est 50-50, alors que le week-end (particulièrement le dimanche) c'est 3 fois sur 4 un homme qui paie.
+
+### Création du diagramme en barres empilées
+
+- Sélectionnez une des cellules du premier tableau créé (la table dynamique donc)
+- Insérez un diagramme
+- Choississez le diagramme en barres empilées (à 100%) indiqué tout à droite
+- Cliquez sur *OK*
+
+> Vous avez un diagramme en barres empilées à 100% permettant de bien comparer les jours de la semaine entre eux.
+
+### A FAIRE
+
+> Faire les profils colonnes
+
+> Analyser le lien entre le jour de la semaine et l'heure (`time`) d'une part, et entre le sexe et la présence de fumeurs à la table d'autre part.
+
+## Analyse du lien entre une variable qualitative et une variable quantitative
+
+### Partie numérique
+
+Si vous avez fait attention, la *table dynamique* nous laisse la possibilité de calculer une moyenne dans chaque cellule.
+
+- Créez une *table dynamique* de la même façon que précédemment
+- Glissez `day` dans *Champs de ligne* et `total_bill` dans *Champs de données*
+- Double-cliquez sur *Somme - total_bill* et choisir *Moyenne*
+- Cliquez sur *OK*
+
+> On a les moyennes des montants payés par jour de la semaine.
+
+Renommez la feuille en `jour-montant` par exemple.
+
+### Partie graphique
+
+Nous ne pouvons malheureusement pas faire de boîtes à moustaches. Toutefois, nous pouvons réaliser un diagramme en barres (plutôt horizontales) permettant de voir la différence entre les jours de la semaine.
+
+- Sélectionnez une des cellules de la table dynamique et insérer un diagramme
+- Choississez *Barre*
+- Cliquez sur *Terminer*
+
+> Ce graphique n'est pas correct statistiquement, mais permet tout de même de représenter la différence des moyennes entre les jours de la semaine
+
+### A FAIRE
+
+> Analyser le lien entre le sex et le pourboire d'une part, et entre le jour de la semaine et le nombre de convives
+
+## Compléments
+
+Compléter l'analyse à chaque variable pas encore analysée et regarder tous les liens possibles avec le montant d'une part, et avec le pourboire d'autre part.
+
+
+
+

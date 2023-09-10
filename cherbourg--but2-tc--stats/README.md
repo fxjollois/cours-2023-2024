@@ -3,6 +3,7 @@
 ## BUT 2 Techniques de Commercialisation
 
 - [Séance 1 - Rappels de Statistiques](seance1--rappels-stats.pdf)
+- [Séance 2 - Stats descriptives dans un tableau](seance2--stats-sur-tableur)
 
 <!--
 
