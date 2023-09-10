@@ -6,6 +6,8 @@ Nous allons travailler sur les données contenu dans le fichier `tips`, dont vou
 - [Format Libre Office](tips.ods)
 - [Format Numbers](tips.numbers)
 
+> Nota Bene : les noms des fonctions dans ce document sont valables dans **Libre Office**. Il est possible que certains soient différents dans les autres tableurs (me demander si cela ne fonctionne pas dans votre outil).
+
 ## Analyse d'une variable quantitative
 
 ### Préparation de la feuille
