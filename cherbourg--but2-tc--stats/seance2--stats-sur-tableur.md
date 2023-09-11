@@ -85,7 +85,7 @@ On va faire ici une première versio *à la main*. Nous verrons plus tard commen
 
 - Créer une nouvelle feuille (que vous nommerez `jour` par exemple)
 - En case `A1`, écrivez *Jour de la semaine* (et mettez le en gras)
-- En case `A3`, écrivez *Jour* et en `A4` *Nombre de tables*
+- En case `A3`, écrivez *Jour* et en `B3` *Nombre de tables*
 - On connaît les modalités donc on va écrire directement *Thur*, *Fri*, *Sat* et *Sun* dans les cellules `A4` à `A7`.
 - Dans la cellule `B4`, nous allons écrire la formule suivante qui calculer le nombre de fois qu'apparaît la valeur de la cellule `A4` dans la colonne `E` de la feuille `tips` :
 ```
