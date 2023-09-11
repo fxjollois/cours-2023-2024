@@ -8,6 +8,15 @@ Nous allons travailler sur les données contenu dans le fichier `tips`, dont vou
 
 > Nota Bene : les noms des fonctions dans ce document sont valables dans **Libre Office**. Il est possible que certains soient différents dans les autres tableurs (me demander si cela ne fonctionne pas dans votre outil).
 
+<!--
+Différence entre Libre Office et Excel
+
+- tips.A:A -> tips!A:A
+- Etiquettes du 1er graphique :
+    - clic sur l'axe des X puis clic-droit -> *Sélectionner des données*
+    
+-->
+
 ## Analyse d'une variable quantitative
 
 ### Préparation de la feuille
@@ -42,7 +51,7 @@ Pour réaliser cela, nous allons créer un tableau. Ecrivez en cellule `D3` à `
 
 #### Première étape
 
-Pour faire notre tableau, nous devons réaliser une première étape de création des valeurs seuils. Nous allons choisir comme seuils, à placer dans le tableau en `D4` et en dessous, les valeurs *0, 10, 15, 20, 5, 30, 35 et ">35"*.
+Pour faire notre tableau, nous devons réaliser une première étape de création des valeurs seuils. Nous allons choisir comme seuils, à placer dans le tableau en `D4` et en dessous, les valeurs *0, 10, 15, 20, 25, 30, 35 et ">35"*.
 
 #### Deuxième étape
 
