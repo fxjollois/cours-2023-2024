@@ -24,7 +24,7 @@ Cette migration va se faire en 4 étapes :
 
 Nous allons utiliser le modele `sqlite3` pour créer la connexion à la base de données. Ensuite, le module `pandas` permet d'exécuter une requête `SELECT` sur une BD et de récupérer le résultat dans un `DataFrame`.
 
-Voici le code pour créer la connexion et récupérer le contenu de la table `Customers` :
+Voici le code pour créer la connexion et récupérer le contenu de la table `Customers` par exemple :
 
 ```python
 # Importation des modules utilisés
@@ -45,17 +45,18 @@ conn.close()
 
 Voici les requêtes qui vont nous servir de test pour la réussite ou non de la migration. Pour chaque requête, faites un choix d'ordonnencement du résultat, s'il n'est pas précisé ou naturel. Cela permettra de mieux comparer les résultats après migration.
 
-1. Donner le nombre de commande pour chaque pays du client, ainsi que le montant total des commandes et le montant total payé ;
-1. Pour chaque produit, donner le nombre de commandes, la quantité totale commandée, et le nombre de clients différents ;
+1. Lister les clients n'ayant jamais effecuté une commande ;
 1. Pour chaque employé, le nombre de clients, le nombre de commandes et le montant total de celles-ci ;
-1. Lister les clients pour lesquels le montant total payé est inférieur aux montants totals des achats ;
+1. Idem pour chaque bureau (nombre de clients, nombre de commandes et montant total), avec en plus le nombre de clients d'un pays différent, s'il y en a ;
+1. Pour chaque produit, donner le nombre de commandes, la quantité totale commandée, et le nombre de clients différents ;
+1. Donner le nombre de commande pour chaque pays du client, ainsi que le montant total des commandes et le montant total payé :
+    - On veut conserver les clients n'ayant jamais commandé dans le résultat final ;
 1. On veut la table de contigence du nombre de commande entre la ligne de produits et le pays du client ;
 1. On veut la même table croisant la ligne de produits et le pays du client, mais avec le montant total payé dans chaque cellule ;
 1. Donner les 10 produits pour lesquels la marge moyenne est la plus importante (cf `buyPrice` et `priceEach`) ;
 1. Lister les produits (avec le nom et le code du client) qui ont été vendus à perte :
     - Si un produit a été dans cette situation plusieurs fois, il doit apparaître plusieurs fois,
     - Une vente à perte arrive quand le prix de vente est inférieur au prix d'achat ;
-1. 
-1. 
+1. Lister les clients pour lesquels le montant total payé est inférieur aux montants totals des achats ;
 
 **A FAIRE** : Ecrire donc les requêtes *SQL* ci-dessus dans un programme *Python*. Pour certaines, il est nécessaire de ré-organiser le résultat de la requête avec du code *Python* ensuite.
