@@ -27,30 +27,14 @@ A ORGANISER COMME SUIT :
 - Séance 11 (3,5h) : NoSQL - Neo4j + évaluation
 -->
 
-- Séance 1 : 
-    - [Introduction au NoSQL]()
-    - [De SQL vers NoSQL, et vice et versa]()
-    
-- Séance 2 :
-    - [Introduction à MongoDB]()
-    - [Premières interrogations avec Mongo]() : (count, distinct, ...)
+## Partie RESSOURCE : *Bases de données NoSQL*
 
-- Séance 3 : 
-    - [Interrogation avancée avec Mongo]() : (aggregate)
-    - [Evaluation 1]()
+- [Séance 1 - Introduction au NoSQL](https://docs.google.com/presentation/d/e/2PACX-1vRi9gT1ZSwXgaDcRYQ4q-srOtJYtdT6hOlo0E6cYt5E9Vk11LJYusYaxa0FNWM95pyO9Jg9SZc9faWJ/pub?start=false&loop=false&delayms=3000)
+- [Séance 2 - Premier pas avec MongoDB](res-seance2)
 
-- Séance 4 :
-    - [Introduction à Neo4j]()
-    - [Premières interrogations avec Neo4j]()
-
-- Séance 5 : 
-    - [Interrogation avancée avec Neo4j]()
-    - [Evaluation 2]()
-
-- Séance 6 :
-    - [A partir de Python]()
-    - [Evaluation 3]()
-
+<!--
+- [Séance 3 - Agrégats et autres](res-seance3)
+-->
 
 <!--
 
@@ -68,6 +52,12 @@ A ORGANISER COMME SUIT :
 
 -->
 
+## Partie SAE : *Migration de données vers ou depuis un environnement NoSQL*
+
+- [Séance 1 - Présentation](sae-seance1)
+
+<!--
+
 - Séance 1 :
     - [Présentation de la base d'origine]()
     - [Requêtes à reproduire dans la nouvelle base]()
@@ -77,6 +67,7 @@ A ORGANISER COMME SUIT :
 
 - Séance 3 : 
     - [Restitution du travail]()
+-->
 
 <!--
 

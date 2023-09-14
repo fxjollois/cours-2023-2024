@@ -14,7 +14,18 @@ Différence entre Libre Office et Excel
 - tips.A:A -> tips!A:A
 - Etiquettes du 1er graphique :
     - clic sur l'axe des X puis clic-droit -> *Sélectionner des données*
-    
+    - dans *Etiquettes de l'axe horizontal*, cliquez sur *Modifiez*
+    - Sélectionnez la plage `F5:F11`
+    - cliquez sur *OK*
+- Tableau croisé dynamique
+    - Choix de la statistique 
+        - cliquez sur *Somme de total_bill*
+        - cliquez sur *Paramètres des chanmps de valeurs...*
+        - choississez *Nombre*
+        - cliquez sur *OK*
+    - Profils lignes
+        - Refaire le même TCD
+        - Dans une cellule du tableau, clic-droit et choisir *Afficher les valeurs* -> *% du total de la ligne*
 -->
 
 ## Analyse d'une variable quantitative
@@ -31,7 +42,7 @@ Différence entre Libre Office et Excel
 
 - Dans la case `B3`, écrivez la formule suivante : `=MOYENNE(tips.a:a)`
     - notez qu'il est possible d'écrire en minuscule ou en majuscule les noms des fonctions
-- Pour l'écart-type, c'est la fonction `ecartype()` qu'il faut utiliser
+- Pour l'écart-type, c'est la fonction `ECARTYPE()` qu'il faut utiliser
 - Pour minimum, maximum et médiane, il existe les fonction `MIN()`, `MAX()` et `MEDIANE()`
 - Pour les quartiles, nous avons la fonction `QUARTILE()`, qui demande en premier la plage des données (ici `tips.A:A`) et le type de quartile (0 : minimum, 1 : Q1, 2 : médiane, 3 : Q3, 4 : maximum)
 - Pour les centiles, il existe la fonction `CENTILE()` qui prend 2 paramètres :
