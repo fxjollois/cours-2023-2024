@@ -33,18 +33,10 @@ On indique juste avec un entier le nombre de document que l'on veut afficher.
 
 - Limite aux 10 premiers restaurants
 
-```js
+```python
 db.restaurants.aggregate([
-    { $limit: 10 }
+    { "$limit": 10 }
 ])
-```
-
-Comme déjà vu dans le précédent TP, on peut ajouter la fonction `pretty()` au résultat pour avoir un affichage plus clair.
-
-```js
-db.restaurants.aggregate([
-    { $limit: 10 }
-]).pretty()
 ```
 
 ### `$sort` 
@@ -53,11 +45,11 @@ On indique de façon identique à celle du paramètre `sort` de la fonction `fin
 
 - Idem avec tri sur le nom du restaurant
 
-```js
+```python
 db.restaurants.aggregate([
-    { $limit: 10 },
-    { $sort: { name: 1 }}
-]).pretty()
+    { "$limit": 10 },
+    { "$sort": { "name": 1 }}
+])
 ```
 
 ### `$match` 
@@ -67,26 +59,26 @@ Ici, c'est identique à celle du paramètre `query` des autres fonctions
 - Idem en se restreignant à *Brooklyn*
     - Notez que nous obtenons uniquement 5 restaurants au final
     
-```js
+```python
 db.restaurants.aggregate([
-    { $limit: 10 },
-    { $sort: { name: 1 }},
-    { $match: { borough: "Brooklyn" }}
-]).pretty()
+    { "$limit": 10 },
+    { "$sort": { "name": 1 }},
+    { "$match": { "borough": "Brooklyn" }}
+])
 ```
 
 - Mêmes opérations mais avec la restriction en amont de la limite
     - Nous avons ici les 10 premiers restaurants de *Brooklyn* donc
 
-```js
+```python
 db.restaurants.aggregate([
-    { $match: { borough: "Brooklyn" }},
-    { $limit: 10 },
-    { $sort: { name: 1 }}
-]).pretty()
+    { "$match": { "borough": "Brooklyn" }},
+    { "$limit": 10 },
+    { "$sort": { "name": 1 }}
+])
 ```
 
-### `$unwind` 
+### `"$unwind"` 
 
 Le but de cette opération est d'**exploser** un tableau dans un document. 
 
@@ -97,34 +89,34 @@ Nous devons mettre le nom du tableau servant de base pour le découpage (précé
 - Séparation des 10 premiers restaurants sur la base des évaluations (`grades`)
     - Chaque ligne correspond maintenant a une évaluation pour un restaurant
 
-```js
+```python
 db.restaurants.aggregate([
-    { $limit: 10 },
-    { $unwind: "$grades" }
-]).pretty()
+    { "$limit": 10 },
+    { "$unwind": "$grades" }
+])
 ```
 
 - Idem précédemment, en se restreignant à celle ayant eu *B*
 
-```js
+```python
 db.restaurants.aggregate([
-    { $limit: 10 },
-    { $unwind: "$grades" },
-    { $match: { "grades.grade": "B" }}
-]).pretty()
+    { "$limit": 10 },
+    { "$unwind": "$grades" },
+    { "$match": { "grades.grade": "B" }}
+])
 ```
 
 - Si on inverse les opérations `$unwind` et `$match`, le résultat est clairement différent
 
-```js
+```python
 db.restaurants.aggregate([
-    { $limit: 10 },
-    { $match: { "grades.grade": "B" }},
-    { $unwind: "$grades" }
-]).pretty()
+    { "$limit": 10 },
+    { "$match": { "grades.grade": "B" }},
+    { "$unwind": "$grades" }
+])
 ```
 
-### `$addFields` et  `$project` 
+### `"$addFields"` et  `"$project"` 
 
 On souhaite ici rédéfinir les documents en ajoutant des éléments (`$addFields`) ou en se restreignant à certains éléments
 (`$project`)
@@ -146,115 +138,115 @@ Quelques opérateurs utiles pour la projection (plus d'info [ici](https://docs.m
 
 - On peut aussi vouloir ajouter un champs, comme ici le nombre d'évaluations
 
-```js
+```python
 db.restaurants.aggregate([
-    { $limit: 10 },
-    { $addFields: { nb_grades: { $size: "$grades" } } }
-]).pretty()
+    { "$limit": 10 },
+    { "$addFields": { "nb_grades": { "$size": "$grades" } } }
+])
 ```
 
 - On souhaite ici ne garder que le nom et le quartier des 10 premiers restaurants
     - Notez l'ordre (alphabétique) des variables, et pas celui de la déclaration
     
-```js
+```python
 db.restaurants.aggregate([
-    { $limit: 10 },
-    { $project: { name: 1, borough: 1 } }
-]).pretty()
+    { "$limit": 10 },
+    { "$project": { "name": 1, "borough": 1 } }
+])
 ```
 
 - Ici, on supprime l'adresse et les évaluations 
 
-```js
+```python
 db.restaurants.aggregate([
-    { $limit: 10 },
-    { $project: { address: 0, grades: 0 } }
-]).pretty()
+    { "$limit": 10 },
+    { "$project": { "address": 0, "grades": 0 } }
+])
 ```
 
 - En plus du nom et du quartier, on récupère l'adresse mais dans un nouveau champs 
 
-```js
+```python
 db.restaurants.aggregate([
-    { $limit: 10 },
-    { $project: { name: 1, borough: 1 , street: "$address.street"} }
-]).pretty()
+    { "$limit": 10 },
+    { "$project": { "name": 1, "borough": 1 , "street": "$address.street"} }
+])
 ```
 
 - On ajoute le nombre de visites pour chaque restaurant (donc la taille du tableau `grades`)
 
-```js
+```python
 db.restaurants.aggregate([
-    { $limit: 10 },
-    { $project: { name: 1, borough: 1, nb_grades: { $size: "$grades" } } }
-]).pretty()
+    { "$limit": 10 },
+    { "$project": { "name": 1, "borough": 1, "nb_grades": { "$size": "$grades" } } }
+])
 ```
 
 - On trie ce résultat par nombre de visites, et on affiche les 10 premiers
     - Notez qu'il y a des restaurants sans visite donc (pour lesquels `grades` est préent mais égal à `NULL`)
     - Dans l'idéal, ces restaurants ne devraient pas avoir de champs `grades`
 
-```js
+```python
 db.restaurants.aggregate([
-    { $project: { name: 1, borough: 1, nb_grades: { $size: "$grades" } } },
-    { $sort: { nb_grades: 1 }},
-    { $limit: 10 }
-]).pretty()
+    { "$project": { "name": 1, "borough": 1, "nb_grades": { "$size": "$grades" } } },
+    { "$sort": { "nb_grades": 1 }},
+    { "$limit": 10 }
+])
 ```
 
 - On ne garde maintenant que le premier élément du tableau `grades` (indicé 0)
 
-```js
+```python
 db.restaurants.aggregate([
-    { $limit: 10 },
-    { $project: { name: 1, borough: 1, grade: { $arrayElemAt: [ "$grades", 0 ]} } }
-]).pretty()
+    { "$limit": 10 },
+    { "$project": { "name": 1, "borough": 1, "grade": { "$arrayElemAt": [ "$grades", 0 ]} } }
+])
 ```
 
 - On peut aussi faire des opérations sur les chaînes, tel que la mise en majuscule du nom
 
-```js
+```python
 db.restaurants.aggregate([
-    { $limit: 10 },
-    { $project: { nom: { $toUpper: "$name" }, borough: 1 } }
-]).pretty()
+    { "$limit": 10 },
+    { "$project": { "nom": { "$toUpper": "$name" }, "borough": 1 } }
+])
 ```
 
 - On extrait ici les trois premières lettres du quartier
 
-```js
+```python
 db.restaurants.aggregate([
-    { $limit: 10 },
-    { $project: { 
-        nom: { $toUpper: "$name" }, 
-        quartier: { $substr: [ "$borough", 0, 3 ] } 
+    { "$limit": 10 },
+    { "$project": { 
+        "nom": { "$toUpper": "$name" }, 
+        "quartier": { "$substr": [ "$borough", 0, 3 ] } 
     } }
-]).pretty()
+])
 ```
 
 - On fait de même, mais on met en majuscule et on note *BRX* pour le *Bronx*
     - on garde le quartier d'origine pour vérification ici
 
-```js
+```python
 db.restaurants.aggregate([
-    { $limit: 10 },
-    { $addFields: { quartier: { $toUpper: { $substr: [ "$borough", 0, 3 ] } } }},
-    { $project: { 
-        nom: { $toUpper: "$name" }, 
-        quartier: { $cond: { if: { $eq: ["$borough", "Bronx"] }, then: "BRX", else: "$quartier" } },
-        borough: 1
+    { "$limit": 10 },
+    { "$addFields": { "quartier": { "$toUpper": { "$substr": [ "$borough", 0, 3 ] } } }},
+    { "$project": { 
+        "nom": { "$toUpper": "$name" }, 
+        "quartier": { "$cond": { "if": { "$eq": ["$borough", "Bronx"] }, "then": "BRX", "else": "$quartier" } },
+        "borough": 1
     } }
-]).pretty()
+])
 ```
 
-### `$group` 
+### `"$group"` 
 
 Cet opérateur permet le calcul d'agrégats tel qu'on le connaît. 
 
 - `_id` : déclaration du critère de regroupement
     - chaîne de caractères : pas de regroupement (tous les documents)
     - `$champs` : regroupement selon ce champs
-    - `{ a1: "$champs1", ... }` : regroupement multiple (avec modification des valeurs possible)
+    - `{ "a1": "$champs1", ... }` : regroupement multiple (avec modification des valeurs possible)
 - Calculs d'agrégats à faire :
     - `$sum` : somme (soit de valeur fixe - 1 pour faire un décompte donc, soit d'un champs spécifique)
     - `$avg, $min, $max`
@@ -263,57 +255,57 @@ Cet opérateur permet le calcul d'agrégats tel qu'on le connaît.
 
 - On calcule ici le nombre total de restaurants
 
-```js
+```python
 db.restaurants.aggregate([
-    { $group: { _id: "Total", NbRestos: { $sum: 1 }}}
+    { "$group": { "_id": "Total", "NbRestos": { "$sum": 1 }}}
 ])
 ```
 
 - On fait de même, mais par quartier
 
-```js
+```python
 db.restaurants.aggregate([
-    { $group: { _id: "$borough", NbRestos: { $sum: 1 }}}
+    { "$group": { "_id": "$borough", "NbRestos": { "$sum": 1 }}}
 ])
 ```
 
 - Pour faire le calcul des notes moyennes des restaurants du *Queens*, on exécute le code suivant
 
-```js
+```python
 db.restaurants.aggregate([
-    { $match: { borough: "Queens" }},
-    { $unwind: "$grades" },
-    { $group: { _id: "null", score: { $avg: "$grades.score" }}}
+    { "$match": { "borough": "Queens" }},
+    { "$unwind": "$grades" },
+    { "$group": { "_id": "null", "score": { "$avg": "$grades.score" }}}
 ])
 ```
 
 -  Il est bien évidemment possible de faire ce calcul par quartier et de les trier selon les notes obtenues (dans l'ordre décroissant)
 
-```js
+```python
 db.restaurants.aggregate([ 
-    { $unwind: "$grades" },
-    { $group: { _id: "$borough", score: { $avg: "$grades.score" }}},
-    { $sort: { score: -1 }}
+    { "$unwind": "$grades" },
+    { "$group": { "_id": "$borough", "score": { "$avg": "$grades.score" }}},
+    { "$sort": { "score": -1 }}
 ])
 ```
 
 - On peut aussi faire un regroupement par quartier et par rue (en ne prenant que la première évaluation - qui est la dernière en date a priori), pour afficher les 10 rues où on mange le plus sainement
     - Notez que le premier `$match` permet de supprimer les restaurants sans évaluations (ce qui engendrerait des moyennes = `NA`)
 
-```js
+```python
 db.restaurants.aggregate([
-    { $project: { 
-        borough: 1, street: "$address.street", 
-        eval: { $arrayElemAt: [ "$grades", 0 ]} 
+    { "$project": { 
+        "borough": 1, "street": "$address.street", 
+        "eval": { "$arrayElemAt": [ "$grades", 0 ]} 
     } },
-    { $match: { eval: { $exists: true } } },
-    { $match: { "eval.score": { $gte: 0 } } },
-    { $group: { 
-        _id: { quartier: "$borough", rue: "$street" }, 
-        score: { $avg: "$eval.score" }
+    { "$match": { "eval": { "$exists": True } } },
+    { "$match": { "eval.score": { "$gte": 0 } } },
+    { "$group": { 
+        "_id": { "quartier": "$borough", "rue": "$street" }, 
+        "score": { "$avg": "$eval.score" }
     }},
-    { $sort: { score: 1 }},
-    { $limit: 10 }
+    { "$sort": { "score": 1 }},
+    { "$limit": 10 }
 ])
 ```
 
@@ -321,14 +313,14 @@ db.restaurants.aggregate([
     - `$addToSet` : valeurs distinctes
     - `$push` : toutes les valeurs présentes
 
-```js
+```python
 db.restaurants.aggregate([
-    { $limit: 10 },
-    { $unwind: "$grades" },
-    { $group: { 
-        _id: "$name", 
-        avec_addToSet: { $addToSet: "$grades.grade" },
-        avec_push: { $push: "$grades.grade" }
+    { "$limit": 10 },
+    { "$unwind": "$grades" },
+    { "$group": { 
+        "_id": "$name", 
+        "avec_addToSet": { "$addToSet": "$grades.grade" },
+        "avec_push": { "$push": "$grades.grade" }
     }}
 ])
 ```
@@ -340,18 +332,18 @@ modalité de ce champs, puis fait un tri décroissant sur le nombre calculé. Il
 
 - Quartiers de New-York triés par nombre décroissant de restaurants
 
-```js
+```python
 db.restaurants.aggregate([
-    { $sortByCount: "$borough" }
+    { "$sortByCount": "$borough" }
 ])
 ```
 
 - C'est l'équivalent de la commande suivante
 
-```js
+```python
 db.restaurants.aggregate([
-    { $group: { _id: "$borough", count: { $sum: 1 } } },
-    { $sort: { count: -1 }}
+    { "$group": { "_id": "$borough", "count": { "$sum": 1 } } },
+    { "$sort": { "count": -1 }}
 ])
 ```
 
