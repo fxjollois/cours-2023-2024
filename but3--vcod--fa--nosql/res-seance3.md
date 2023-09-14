@@ -34,9 +34,10 @@ On indique juste avec un entier le nombre de document que l'on veut afficher.
 - Limite aux 10 premiers restaurants
 
 ```python
-db.restaurants.aggregate([
+c = db.restaurants.aggregate([
     { "$limit": 10 }
 ])
+pandas.DataFrame(list(c))
 ```
 
 ### `$sort` 
@@ -46,10 +47,11 @@ On indique de façon identique à celle du paramètre `sort` de la fonction `fin
 - Idem avec tri sur le nom du restaurant
 
 ```python
-db.restaurants.aggregate([
+c = db.restaurants.aggregate([
     { "$limit": 10 },
     { "$sort": { "name": 1 }}
 ])
+pandas.DataFrame(list(c))
 ```
 
 ### `$match` 
@@ -60,22 +62,24 @@ Ici, c'est identique à celle du paramètre `query` des autres fonctions
     - Notez que nous obtenons uniquement 5 restaurants au final
     
 ```python
-db.restaurants.aggregate([
+c = db.restaurants.aggregate([
     { "$limit": 10 },
     { "$sort": { "name": 1 }},
     { "$match": { "borough": "Brooklyn" }}
 ])
+pandas.DataFrame(list(c))
 ```
 
 - Mêmes opérations mais avec la restriction en amont de la limite
     - Nous avons ici les 10 premiers restaurants de *Brooklyn* donc
 
 ```python
-db.restaurants.aggregate([
+c = db.restaurants.aggregate([
     { "$match": { "borough": "Brooklyn" }},
     { "$limit": 10 },
     { "$sort": { "name": 1 }}
 ])
+pandas.DataFrame(list(c))
 ```
 
 ### `"$unwind"` 
@@ -90,30 +94,33 @@ Nous devons mettre le nom du tableau servant de base pour le découpage (précé
     - Chaque ligne correspond maintenant a une évaluation pour un restaurant
 
 ```python
-db.restaurants.aggregate([
+c = db.restaurants.aggregate([
     { "$limit": 10 },
     { "$unwind": "$grades" }
 ])
+pandas.DataFrame(list(c))
 ```
 
 - Idem précédemment, en se restreignant à celle ayant eu *B*
 
 ```python
-db.restaurants.aggregate([
+c = db.restaurants.aggregate([
     { "$limit": 10 },
     { "$unwind": "$grades" },
     { "$match": { "grades.grade": "B" }}
 ])
+pandas.DataFrame(list(c))
 ```
 
 - Si on inverse les opérations `$unwind` et `$match`, le résultat est clairement différent
 
 ```python
-db.restaurants.aggregate([
+c = db.restaurants.aggregate([
     { "$limit": 10 },
     { "$match": { "grades.grade": "B" }},
     { "$unwind": "$grades" }
 ])
+pandas.DataFrame(list(c))
 ```
 
 ### `"$addFields"` et  `"$project"` 
@@ -139,47 +146,52 @@ Quelques opérateurs utiles pour la projection (plus d'info [ici](https://docs.m
 - On peut aussi vouloir ajouter un champs, comme ici le nombre d'évaluations
 
 ```python
-db.restaurants.aggregate([
+c = db.restaurants.aggregate([
     { "$limit": 10 },
     { "$addFields": { "nb_grades": { "$size": "$grades" } } }
 ])
+pandas.DataFrame(list(c))
 ```
 
 - On souhaite ici ne garder que le nom et le quartier des 10 premiers restaurants
     - Notez l'ordre (alphabétique) des variables, et pas celui de la déclaration
     
 ```python
-db.restaurants.aggregate([
+c = db.restaurants.aggregate([
     { "$limit": 10 },
     { "$project": { "name": 1, "borough": 1 } }
 ])
+pandas.DataFrame(list(c))
 ```
 
 - Ici, on supprime l'adresse et les évaluations 
 
 ```python
-db.restaurants.aggregate([
+c = db.restaurants.aggregate([
     { "$limit": 10 },
     { "$project": { "address": 0, "grades": 0 } }
 ])
+pandas.DataFrame(list(c))
 ```
 
 - En plus du nom et du quartier, on récupère l'adresse mais dans un nouveau champs 
 
 ```python
-db.restaurants.aggregate([
+c = db.restaurants.aggregate([
     { "$limit": 10 },
     { "$project": { "name": 1, "borough": 1 , "street": "$address.street"} }
 ])
+pandas.DataFrame(list(c))
 ```
 
 - On ajoute le nombre de visites pour chaque restaurant (donc la taille du tableau `grades`)
 
 ```python
-db.restaurants.aggregate([
+c = db.restaurants.aggregate([
     { "$limit": 10 },
     { "$project": { "name": 1, "borough": 1, "nb_grades": { "$size": "$grades" } } }
 ])
+pandas.DataFrame(list(c))
 ```
 
 - On trie ce résultat par nombre de visites, et on affiche les 10 premiers
@@ -187,48 +199,52 @@ db.restaurants.aggregate([
     - Dans l'idéal, ces restaurants ne devraient pas avoir de champs `grades`
 
 ```python
-db.restaurants.aggregate([
+c = db.restaurants.aggregate([
     { "$project": { "name": 1, "borough": 1, "nb_grades": { "$size": "$grades" } } },
     { "$sort": { "nb_grades": 1 }},
     { "$limit": 10 }
 ])
+pandas.DataFrame(list(c))
 ```
 
 - On ne garde maintenant que le premier élément du tableau `grades` (indicé 0)
 
 ```python
-db.restaurants.aggregate([
+c = db.restaurants.aggregate([
     { "$limit": 10 },
     { "$project": { "name": 1, "borough": 1, "grade": { "$arrayElemAt": [ "$grades", 0 ]} } }
 ])
+pandas.DataFrame(list(c))
 ```
 
 - On peut aussi faire des opérations sur les chaînes, tel que la mise en majuscule du nom
 
 ```python
-db.restaurants.aggregate([
+c = db.restaurants.aggregate([
     { "$limit": 10 },
     { "$project": { "nom": { "$toUpper": "$name" }, "borough": 1 } }
 ])
+pandas.DataFrame(list(c))
 ```
 
 - On extrait ici les trois premières lettres du quartier
 
 ```python
-db.restaurants.aggregate([
+c = db.restaurants.aggregate([
     { "$limit": 10 },
     { "$project": { 
         "nom": { "$toUpper": "$name" }, 
         "quartier": { "$substr": [ "$borough", 0, 3 ] } 
     } }
 ])
+pandas.DataFrame(list(c))
 ```
 
 - On fait de même, mais on met en majuscule et on note *BRX* pour le *Bronx*
     - on garde le quartier d'origine pour vérification ici
 
 ```python
-db.restaurants.aggregate([
+c = db.restaurants.aggregate([
     { "$limit": 10 },
     { "$addFields": { "quartier": { "$toUpper": { "$substr": [ "$borough", 0, 3 ] } } }},
     { "$project": { 
@@ -237,6 +253,7 @@ db.restaurants.aggregate([
         "borough": 1
     } }
 ])
+pandas.DataFrame(list(c))
 ```
 
 ### `"$group"` 
@@ -256,44 +273,48 @@ Cet opérateur permet le calcul d'agrégats tel qu'on le connaît.
 - On calcule ici le nombre total de restaurants
 
 ```python
-db.restaurants.aggregate([
+c = db.restaurants.aggregate([
     { "$group": { "_id": "Total", "NbRestos": { "$sum": 1 }}}
 ])
+pandas.DataFrame(list(c))
 ```
 
 - On fait de même, mais par quartier
 
 ```python
-db.restaurants.aggregate([
+c = db.restaurants.aggregate([
     { "$group": { "_id": "$borough", "NbRestos": { "$sum": 1 }}}
 ])
+pandas.DataFrame(list(c))
 ```
 
 - Pour faire le calcul des notes moyennes des restaurants du *Queens*, on exécute le code suivant
 
 ```python
-db.restaurants.aggregate([
+c = db.restaurants.aggregate([
     { "$match": { "borough": "Queens" }},
     { "$unwind": "$grades" },
     { "$group": { "_id": "null", "score": { "$avg": "$grades.score" }}}
 ])
+pandas.DataFrame(list(c))
 ```
 
 -  Il est bien évidemment possible de faire ce calcul par quartier et de les trier selon les notes obtenues (dans l'ordre décroissant)
 
 ```python
-db.restaurants.aggregate([ 
+c = db.restaurants.aggregate([ 
     { "$unwind": "$grades" },
     { "$group": { "_id": "$borough", "score": { "$avg": "$grades.score" }}},
     { "$sort": { "score": -1 }}
 ])
+pandas.DataFrame(list(c))
 ```
 
 - On peut aussi faire un regroupement par quartier et par rue (en ne prenant que la première évaluation - qui est la dernière en date a priori), pour afficher les 10 rues où on mange le plus sainement
     - Notez que le premier `$match` permet de supprimer les restaurants sans évaluations (ce qui engendrerait des moyennes = `NA`)
 
 ```python
-db.restaurants.aggregate([
+c = db.restaurants.aggregate([
     { "$project": { 
         "borough": 1, "street": "$address.street", 
         "eval": { "$arrayElemAt": [ "$grades", 0 ]} 
@@ -307,6 +328,7 @@ db.restaurants.aggregate([
     { "$sort": { "score": 1 }},
     { "$limit": 10 }
 ])
+pandas.DataFrame(list(c))
 ```
 
 - Pour comprendre la différence entre `$addToSet` et `$push`, on les applique sur les grades obtenus pour les 10 premiers restaurants
@@ -314,7 +336,7 @@ db.restaurants.aggregate([
     - `$push` : toutes les valeurs présentes
 
 ```python
-db.restaurants.aggregate([
+c = db.restaurants.aggregate([
     { "$limit": 10 },
     { "$unwind": "$grades" },
     { "$group": { 
@@ -323,6 +345,7 @@ db.restaurants.aggregate([
         "avec_push": { "$push": "$grades.grade" }
     }}
 ])
+pandas.DataFrame(list(c))
 ```
 
 ### `$sortBycount`
@@ -333,18 +356,20 @@ modalité de ce champs, puis fait un tri décroissant sur le nombre calculé. Il
 - Quartiers de New-York triés par nombre décroissant de restaurants
 
 ```python
-db.restaurants.aggregate([
+c = db.restaurants.aggregate([
     { "$sortByCount": "$borough" }
 ])
+pandas.DataFrame(list(c))
 ```
 
 - C'est l'équivalent de la commande suivante
 
 ```python
-db.restaurants.aggregate([
+c = db.restaurants.aggregate([
     { "$group": { "_id": "$borough", "count": { "$sum": 1 } } },
     { "$sort": { "count": -1 }}
 ])
+pandas.DataFrame(list(c))
 ```
 
 
