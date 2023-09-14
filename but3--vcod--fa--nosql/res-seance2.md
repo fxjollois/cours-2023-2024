@@ -362,7 +362,7 @@ Notez le contenu des colonnes `address` et `grades`.
 
 ```python
 import pandas
-pandas.DataFrame(db.restaurants.find(limit = 5))
+pandas.DataFrame(list(db.restaurants.find(limit = 5)))
 ```
 
 
@@ -372,7 +372,7 @@ pandas.DataFrame(db.restaurants.find(limit = 5))
 
 ```python
 c = db.restaurants.find({ "name": "Shake Shack" }, { "address.street": 1, "borough": 1 })
-pandas.DataFrame(c)
+pandas.DataFrame(list(c))
 ```
 
 
@@ -385,7 +385,7 @@ c = db.restaurants.find(
     { "name": "Shake Shack" }, 
     { "_id": 0, "address.street": 1, "borough": 1 }
 )
-pandas.DataFrame(c)
+pandas.DataFrame(list(c))
 ```
 
 
@@ -399,7 +399,7 @@ c = db.restaurants.find(
     {"_id": 0, "name": 1, "grades.score": 1, "address.street": 1},
     limit = 5
 )
-pandas.DataFrame(c)
+pandas.DataFrame(list(c))
 ```
 
 #### Récupération de documents (suite)
@@ -411,7 +411,7 @@ c = db.restaurants.find(
     {"name": "Shake Shack", "borough": {"$in": ["Queens", "Brooklyn"]}}, 
     {"_id": 0, "address.street": 1, "borough": 1}
 )
-pandas.DataFrame(c)
+pandas.DataFrame(list(c))
 ```
 
 
@@ -425,7 +425,7 @@ c = db.restaurants.find(
     {"_id": 0, "name": 1, "address.street": 1},
     sort = (("address.street", -1), ("name", 1))
 )
-pandas.DataFrame(c)
+pandas.DataFrame(list(c))
 ```
 
 
