@@ -373,6 +373,82 @@ pandas.DataFrame(list(c))
 ```
 
 
+## Gestion des variables spéciales dans le DataFrame
+
+Une fois importées dans un DataFrame, les champs complexes (comme `address` et `grades`) sont des variables d'un type un peu particulier.
+
+```python
+df = pandas.DataFrame(list(db.restaurants.find(limit = 10)))
+df
+```
+
+### Variables ayant des dictionnaires comme valeurs
+
+Le champs address est une liste de dictionnaires, ayant chacun plusieurs champs (ici tous les mêmes).
+
+```python
+df.address
+```
+
+#### Manipulation simple
+
+Nom du bâtiment et rue concaténés dans une nouvelle variable de `df` (utilisation de *list comprehension* ici)
+
+```python
+df.assign(info = [e["building"] + ", " + e["street"] for e in df.address])
+```
+
+#### Manipulation plus complexe
+
+Transformation de la liste en un DataFrame
+
+```python
+pandas.DataFrame([e for e in df.address])
+```
+
+#### Idem en intégrant le résultat dans le DataFrame original
+
+```python
+pandas.concat([df.drop("address", axis = 1), pandas.DataFrame([e for e in df.address])], axis = 1)
+```
+
+### Variables ayant des tableaux comme valeurs
+
+Le champs `grades` est une liste de tableaux, ayant chacun potentiellement plusieurs valeurs (des dictionnaires de plus)
+
+```python
+df.grades
+```
+
+### Manipulation simple
+
+Récupération d'un élément du tableau (premier ou dernier)
+
+```python
+df.assign(derniere = [e[0] for e in df.grades], premiere = [e[-1] for e in df.grades]).drop("grades", axis = 1)
+```
+
+### Manipulation plus complexe
+
+Transformation de la liste de tableaux en un seul DataFrame
+
+- `zip()` permet d'itérer sur plusieurs tableaux en même temps
+- `concat()` permet de concaténer les tableaux entre eux
+
+```python
+dfgrades = pandas.concat([pandas.DataFrame(g).assign(_id = i) for (i, g) in zip(df._id, df.grades)])
+dfgrades
+```
+
+### Combinaison avec les données originales
+
+Jointure entre les deux DataFrames avec merge()
+
+```python
+pandas.merge(df.drop("grades", axis = 1), dfgrades.reset_index())
+```
+
+
 ## A faire
 
 1. Quelles sont les 10 plus grandes chaines de restaurants (nom identique) ?
@@ -402,3 +478,29 @@ pandas.DataFrame(list(c))
         3. regroupement avec `push`
         4. `slice` pour prendre une partie d'un tableau
 
+
+## Données AirBnB
+
+Nous allons travailler sur des données AirBnB. Celles-ci sont stockées sur le serveur Mongo dans la collection `listingsAndReview` de la base `sample_airbnb`.
+
+> [Aide sur les données](https://docs.atlas.mongodb.com/sample-data/sample-airbnb)
+
+Une fois créée la connexion à la collection dans Python, répondre aux questions suivantes :
+
+1. Lister les différentes types de logements possibles cf (`room_type`)
+1. Lister les différents équipements possibles cf (`amenities`)
+1. Donner le nombre de logements
+1. Donner le nombre de logements de type "Entire home/apt"
+1. Donner le nombre de logements proposant la "TV" et le "Wifi (cf `amenities`) 
+1. Donner le nombre de logements n'ayant eu aucun avis
+    - il existe les champs `number_of_reviews` et `reviews` (tableau des avis) - vérifiez qu'ils soient cohérents
+1. Lister les informations du logement "10545725" (cf `_id`)
+1. Lister le nom, la rue et le pays des logements dont le prix est supérieur à 10000
+1. Donner le nombre de logements par type
+1. Donner le nombre de logements par pays
+1. On veut représenter graphiquement la distribution des prix, il nous faut donc récupérer uniquement les tarifs 
+    - Un tarif apparraissant plusieurs fois dans la base doit être présent plusieurs fois dans cette liste
+1. Calculer pour chaque type de logements (`room_type`) le prix (`price`)
+1. On veut représenter la distribution du nombre d'avis. Il faut donc calculer pour chaque logement le nombre d'avis qu'il a eu (cf `reviews`)
+1. Compter le nombre de logement pour chaque équipement possible
+1. On souhaite connaître les 10 utilisateurs ayant fait le plus de commentaires
