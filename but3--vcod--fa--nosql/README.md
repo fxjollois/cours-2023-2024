@@ -31,7 +31,7 @@ A ORGANISER COMME SUIT :
 
 - [Séance 1 - Introduction au NoSQL](https://docs.google.com/presentation/d/e/2PACX-1vRi9gT1ZSwXgaDcRYQ4q-srOtJYtdT6hOlo0E6cYt5E9Vk11LJYusYaxa0FNWM95pyO9Jg9SZc9faWJ/pub?start=false&loop=false&delayms=3000)
 - [Séance 2 - Premier pas avec MongoDB](res-seance2)
-- [Séance 3 - Agrégats et plus encore](res-seance2)
+- [Séance 3 - Agrégats et plus encore](res-seance3)
 
 <!--
 - [Séance 3 - Agrégats et autres](res-seance3)
