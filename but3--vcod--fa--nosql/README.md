@@ -1,5 +1,7 @@
 # Bases de données NoSQL
 
+> Si vous souhaitez utiliser *Mongo* sur votre ordinateur, vous devez les instructions présentées dans [ce fichier](../info-mongo).
+
 <!--
 Planning prévu : les 2 groupes sont toujours en parallèle
 - CcpC|C|cc|ccp|c|cp|cp|ppp
