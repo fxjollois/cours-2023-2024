@@ -4,6 +4,7 @@
 
 - [Séance 1 - Rappels de Statistiques](seance1--rappels-stats.pdf)
 - [Séance 2 - Stats descriptives dans un tableau](seance2--stats-sur-tableur)
+- [Séance 3 - Lois et probabilités](seance3--lois-et-proba.pdf)
 
 <!--
 
