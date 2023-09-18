@@ -1,5 +1,7 @@
 # Bases de données NoSQL
 
+> Si vous souhaitez utiliser *Mongo* sur votre ordinateur, vous devez les instructions présentées dans [ce fichier](../info-mongo).
+
 <!--
 Planning prévu :
 - Groupe 1 -> CC|CCCP|CC|PCPC|PP
@@ -22,32 +24,31 @@ A ORGANISER COMME SUIT :
 -->
 
 - Séance 1 : 
+    - [Introduction au NoSQL](https://docs.google.com/presentation/d/e/2PACX-1vRi9gT1ZSwXgaDcRYQ4q-srOtJYtdT6hOlo0E6cYt5E9Vk11LJYusYaxa0FNWM95pyO9Jg9SZc9faWJ/pub?start=false&loop=false&delayms=3000)
+    - [Premiers pas avec Mongo](res-seance1)
+
+<!--
+- Séance 1 : 
     - [Introduction au NoSQL]()
     - [De SQL vers NoSQL, et vice et versa]()
-    
 - Séance 2 :
     - [Introduction à MongoDB]()
     - [Premières interrogations avec Mongo]() : (count, distinct, ...)
-
 - Séance 3 : 
     - [Interrogation avancée avec Mongo]() : (aggregate)
     - [Evaluation 1]()
-
 - Séance 4 :
     - [Introduction à Neo4j]()
     - [Premières interrogations avec Neo4j]()
-
 - Séance 5 : 
     - [Interrogation avancée avec Neo4j]()
     - [Evaluation 2]()
-
 - Séance 6 :
     - [A partir de Python]()
     - [Evaluation 3]()
-
+-->
 
 <!--
-
 - NoSQL :
     - MongoDB sûr (+ Neo4J ?)
     - 6 séances de 3,5 heures de TP :
@@ -58,22 +59,19 @@ A ORGANISER COMME SUIT :
         - Interrogation (aggregate)
         - A partir de python
         - Manipulation complexe (import et export de données) (2h) + évaluation (1h)
-
-
 -->
 
+<!--
 - Séance 1 :
     - [Présentation de la base d'origine]()
     - [Requêtes à reproduire dans la nouvelle base]()
-
 - Séance 2 :
     - [???]()
-
 - Séance 3 : 
     - [Restitution du travail]()
+-->
 
 <!--
-
 - SAE Migration
     - A priori : 9h de TP (3 séances de 3h) + 6h de suivi
         1. Présentation de la base originale + Recherche des requêtes sur la base d'origine
@@ -85,5 +83,4 @@ A ORGANISER COMME SUIT :
         - On a une liste de requêtes dans la base d'origine
         - On doit migrer la base de données vers l'autre techno
         - On doit ré-écrire les requêtes avec la nouvelle base
-
 -->
