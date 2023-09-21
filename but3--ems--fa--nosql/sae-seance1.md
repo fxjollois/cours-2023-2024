@@ -60,3 +60,7 @@ Voici les requêtes qui vont nous servir de test pour la réussite ou non de la 
 1. Lister les clients pour lesquels le montant total payé est inférieur aux montants totals des achats ;
 
 **A FAIRE** : Ecrire donc les requêtes *SQL* ci-dessus dans un programme *Python*. Pour certaines, il est nécessaire de ré-organiser le résultat de la requête avec du code *Python* ensuite.
+
+Le notebook jupyter est à déposer dans cet espace (veuillez à mettre le nom des étudiants dans le nom du fichier, ainsi que les écrire dans une cellule du notebook) :
+
+<https://cloud.parisdescartes.fr/index.php/s/AGCpGyXW2ijGGyq>
