@@ -23,6 +23,8 @@ A ORGANISER COMME SUIT :
 - Séance 9 (3,5h) : NoSQL - Néo4j + évaluation
 -->
 
+## Partie RESSOURCE : *Bases de données NoSQL*
+
 - Séance 1 : 
     - [Introduction au NoSQL](https://docs.google.com/presentation/d/e/2PACX-1vRi9gT1ZSwXgaDcRYQ4q-srOtJYtdT6hOlo0E6cYt5E9Vk11LJYusYaxa0FNWM95pyO9Jg9SZc9faWJ/pub?start=false&loop=false&delayms=3000)
     - [Premiers pas avec Mongo](res-seance1)
@@ -60,6 +62,12 @@ A ORGANISER COMME SUIT :
         - A partir de python
         - Manipulation complexe (import et export de données) (2h) + évaluation (1h)
 -->
+
+
+## Partie SAE : *Migration de données vers ou depuis un environnement NoSQL*
+
+- [Séance 1 - Présentation et premières requêtes](sae-seance1)
+
 
 <!--
 - Séance 1 :

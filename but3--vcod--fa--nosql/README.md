@@ -57,7 +57,7 @@ A ORGANISER COMME SUIT :
 
 ## Partie SAE : *Migration de données vers ou depuis un environnement NoSQL*
 
-- [Séance 1 - Présentation](sae-seance1)
+- [Séance 1 - Présentation et premières requêtes](sae-seance1)
 
 <!--
 
