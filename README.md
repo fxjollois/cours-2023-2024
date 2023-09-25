@@ -11,7 +11,7 @@ Ce site regroupe l'ensemble des documents que j'utilise dans mes cours pour l'an
 
 ## Master Université Paris Cité
 
-- [M1 Informatique - Parcours DCI - Extraction de Connaissances à partir de Données](ufr--m1-dci--esd)
+- [M1 Informatique - Parcours DCI - Extraction de Connaissances à partir de Données](ufr--m1-dci--ecd)
 
 - [M1 Science des Données - Parcours AMSD/MLSD - Administration Linux]()
 - [M1 Science des Données - Parcours AMSD/MLSD - Programmation web]()
