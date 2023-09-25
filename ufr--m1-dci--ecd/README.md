@@ -3,6 +3,7 @@
 ## Master Informatique - Parcours DCI (Données, Connaissances, Intelligence)
 
 1. [Introduction à Python](seance1-intro-python)
+<!--
     - [correction](seance1-correction.html)
 2. [Manipulation et Visualisation de données](seance2-stat-python)
     - [correction](seance2-correction.html)
@@ -21,6 +22,7 @@
     - [correction](seance7-correction.html)
 
 - [Sujet du TP](sujet-tp.html)
+-->
 
 <!--
 Lien vers les plateformes de l'UFR Math-Info : 
