@@ -481,7 +481,7 @@ pandas.merge(df.drop("grades", axis = 1), dfgrades.reset_index())
 
 ## Données AirBnB
 
-Nous allons travailler sur des données AirBnB. Celles-ci sont stockées sur le serveur Mongo dans la collection `listingsAndReview` de la base `sample_airbnb`.
+Nous allons travailler sur des données AirBnB. Celles-ci sont stockées sur le serveur Mongo dans la collection `listingsAndReviews` de la base `sample_airbnb`.
 
 > [Aide sur les données](https://docs.atlas.mongodb.com/sample-data/sample-airbnb)
 
