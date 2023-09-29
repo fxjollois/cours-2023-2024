@@ -573,7 +573,7 @@ def f2(a):
     return a
 
 a = list(range(5))
-print(a, f1(a), a, sep = "\n")
+print(a, f2(a), a, sep = "\n")
 ```
     
 ---
@@ -716,7 +716,7 @@ os.chdir("lien/vers/nouveau/repertoire")
 ```python
 fichier = open("Iris.txt")
 lignesBrutes = fichier.readlines()
-fichier.close
+fichier.close()
 ```
     
 ---
