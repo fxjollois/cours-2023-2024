@@ -10,42 +10,44 @@
 
 - Téléchargez [Ubuntu Server](https://ubuntu.com/download/server)
 
-- Dans VirtualBox, cliquer sur Nouvelle
-    - Nom = Serveur Data Science
+- Dans VirtualBox, cliquer sur **Nouvelle**
+    - Nom = *Serveur Linux Data Science*
     - Dossier = laisser tel quel (ou choisir un dossier spécifique si vous le souhaitez)
     - Type = Linux
     - Version = Ubuntu (64-bits) 
-    - Continuez
+    - **Suivant**
     
 - Quantité de mémoire : 
-    - idéalement 2Go
+    - idéalement 2Go (*i.e.* 2048 Mo - ce qui est proposé par défaut me semble-t'il)
     - Plus si vous le pouvez (pas plus de la moitié de la capacité de votre machine)
-    - Continuez
+    - **Suivant**
 
 - Disque dur : laissez "Créer un disque dur virtuel maintenant"
-    - Créer
     - Type de disque dur : laissez "VDI"
         - Continuer
     - Stockage sur disque dur : laissez "Dynamiquement alloué"
         - Continuer
     - Emplacement : laissez le chemin indiqué
         - Pour la taille, mettez au moins 50 Go si vous le pouvez
-        - Continuer
+    - **Suivant**
+
+- Récapitulatif
+    - **Finish**
         
 > **La machine est créée**
 
-- Sélectionner la machine virtuelle, et cliquer sur Configuration
+- Sélectionner la machine virtuelle, et cliquer sur *Configuration*
 
-- Choisir Stockage
+- Choisir *Stockage*
     - Sélectionner "Vide" dans la partie "Contrôleur : IDE"
     - Cliquer sur l'icône à droite de "Maître secondaire IDE", et choisir "Choose a disk file"
         - Sélectionner le fichier ISO de Ubuntu Server
         - Cliquer sur Ouvrir
-    - Cliquer sur OK
+    - Cliquer sur **OK**
 
 > **La machine va faire comme si le fichier ISO était un disque dur en plus**
 
-- Cliquer sur Démarrer
+- Cliquer sur *Démarrer*
 
 - Choisir "Try or Install Ubuntu Server" et taper sur Entrée (ou attendre que ça se lance automatiquement)
 
@@ -71,7 +73,7 @@
 - Configurer le stockage
     - Laisser le choix par défaut et taper sur Entrée (en le sélectionnant via "Tab")
 
-- Suite de la onfiguration du stockage
+- Suite de la configuration du stockage
     - Laisser le choix par défaut et taper sur Entrée
 
 - Confirmer l'action en sélectionnant **Continuer** et en tapant sur Entrée
@@ -95,13 +97,14 @@
 - Une fois l'installation terminé, sélectionner "Redémarrer maintenant"
     - Appuyez une fois encore sur Entrée (cela devrait supprimer le lecteur du fichier ISO)
 
-- Une fois relancer, vous devriez avoir cette invite (en appuyant sur Entrée éventuellement)
+- Une fois relancéuser, vous devriez avoir cette invite (en appuyant sur Entrée éventuellement)
 
 ```
 sysdatascience login:
 ```
 
 - Tapez votre nom d'utilisateur et votre mot de passe (cf étape précédente)
+    - *Nota Bene* : sur Linux, lorsque vous tapez un mot de passe, rien ne se passe -> c'est normal
 
 > **Vous êtes connecté sur votre serveur**, et devriez avoir qqch du genre 
 
