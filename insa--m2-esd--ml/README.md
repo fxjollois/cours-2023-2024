@@ -22,13 +22,16 @@ Ces méthodes couvriront les problématiques de description statistique des donn
     - Jour 3 : Autres méthodes (MDS, NMF, ?) - TP noté ?
 -->
 
-- Séance 1 : 
+- Journée 1 : 
     - [Introduction - étude de cas](intro.slides.html) 
         - [Base sur Python](base-python.html) 
         - [Demande](base-demande.html)
-    - [Analyse en Composantes Principales](acp-cours.html) 
+    - [Analyse en Composantes Principales](acp-cours.html)
         - [Utilisation sous Python](acp-python.slides.html) 
         - [Demande](acp-demande.html)
+    - [Analyse Factorielles des Correspondances](afc-cours.html)
+        - [Utilisation sous Python](afc-python.slides.html) 
+        - [Demande](afc-demande.html)
 
 <!--
 - Séance 2 : 
