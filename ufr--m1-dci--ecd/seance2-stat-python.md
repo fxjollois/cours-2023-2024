@@ -601,13 +601,13 @@ p.set_axis_labels("Nombre de convives", "Pourboire")
 ### Données AirBnB - Paris
 
 - Site [InsideAirBnB](http://insideairbnb.com/get-the-data) : logements proposés sur AirBnB
-    - Snapshots sur une journée spécifique d
+    - Snapshots sur une journée spécifique
     - Dans certaines villes du monde entier
     - Ensemble de variables expliquées sur [cette page](https://docs.google.com/spreadsheets/d/1iWCNJcSutYqpULSQHlNyGInUvHg2BoUGoNRIGa6Szc4/edit#gid=1938308660).
     
 - Données sur Paris :
-    - 6 juin 2022 
-    - Fichier [listings.csv](http://data.insideairbnb.com/france/ile-de-france/paris/2022-06-06/visualisations/listings.csv) 
+    - 4 septembre 2023
+    - Fichier [listings.csv](http://data.insideairbnb.com/france/ile-de-france/paris/2023-09-04/visualisations/listings.csv) 
 
 ---
 ## Réaliser les étapes suivantes
