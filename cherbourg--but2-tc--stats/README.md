@@ -5,6 +5,7 @@
 - [Séance 1 - Rappels de Statistiques](seance1--rappels-stats.pdf)
 - [Séance 2 - Stats descriptives dans un tableau](seance2--stats-sur-tableur)
 - [Séance 3 - Lois et probabilités](seance3--lois-et-proba.pdf)
+- [Séance 4 - Travail sur la loi Normale](seance4--loi-normale)
 
 <!--
 
@@ -14,7 +15,8 @@
     - Tableur : simplifier le TP2 (attention à logements autres par exemple)
     - Ajouter un ou deux TPs de manipulation Excel avec des graphiques
     - Programme des 9 séances
-        1. Rappel de stats desc + 1ère manipulation dans un tableur (calculs et graphiques ?)
+        1. Rappel de stats desc 
+        1. 1ère manipulation dans un tableur (calculs et graphiques ?)
         2. Pourquoi la statistique inférentielle ? loi + IC
         3. Loi de Bernouilli et Loi Binomiale + exercices sur tableur (?)
         4. Loi de Poisson + exercices sur tableur (?)
