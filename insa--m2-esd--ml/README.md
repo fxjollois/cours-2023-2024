@@ -23,28 +23,28 @@ Ces méthodes couvriront les problématiques de description statistique des donn
 -->
 
 - Séance 1 : 
-    - [Introduction à l'ingénierie de données](intro-ingenierie) 
-        - [Base sur Python](base-python.slides.html) 
+    - [Introduction - étude de cas](intro.slides.html) 
+        - [Base sur Python](base-python.html) 
         - [Demande](base-demande.html)
     - [Analyse en Composantes Principales](acp-cours.html) 
         - [Utilisation sous Python](acp-python.slides.html) 
         - [Demande](acp-demande.html)
 
+<!--
 - Séance 2 : 
     - [Clustering avec CAH et *k*-means](classif-cours.html) 
         - [CAH sous Python](cah-python.slides.html) 
         - [*k*-means sous Python](kmeans-python.slides.html) 
         - [Demande](classif-demande.html)
     - Tout ensemble
-
 - Séance 3 :
     - Autres méthodes
         - [MDS]() ?
         - [DBSCAN](dbscan-python.slides.html) (voire BIRCH ou autres)
         - [SOM]() ?
-
     - [Sujet TP noté]()
         - [Aide pour l'importation](tp-note-import.html)
+-->
 
 ### Liens intéressants 
 
