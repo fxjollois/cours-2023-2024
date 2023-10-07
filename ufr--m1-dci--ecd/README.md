@@ -5,10 +5,10 @@
 1. [Introduction à Python](seance1-intro-python)
     - [correction](seance1-correction.html)
 2. [Manipulation et Visualisation de données](seance2-stat-python)
+    - [correction](seance2-correction.html)
 
 <!--
 
-    - [correction](seance2-correction.html)
 3. [Représentation multidimensionnelle via l'ACP](seance3-acp.html)
     - [sous `python`](seance3-acp-python.html)
     - [correction](seance3-correction.html)
