@@ -31,9 +31,12 @@ Ces méthodes couvriront les problématiques de description statistique des donn
         - [Utilisation sous Python](acp-python.slides.html) 
         - [Demande](acp-demande.html)
             - [Correction Wine](acp-demande1-correction.html)
+            - [Correction WGI](acp-demande2-correction.html)
+            - [Correction HadCRUT](acp-demande3-correction.html)
     - [Analyse Factorielles des Correspondances](afc-cours.html)
         - [Utilisation sous Python](afc-python.slides.html) 
         - [Demande](afc-demande.html)
+            - [Correction INSEE](afc-demande-correction.html)
 
 <!--
 - Séance 2 : 
