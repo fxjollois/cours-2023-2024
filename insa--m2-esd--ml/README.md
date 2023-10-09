@@ -25,7 +25,8 @@ Ces méthodes couvriront les problématiques de description statistique des donn
 - Journée 1 : 
     - [Introduction - étude de cas](intro.slides.html) 
         - [Base sur Python](base-python.html) 
-        - [Demande](base-demande.html) - [correction](base-correction.html)
+        - [Demande](base-demande.html)
+            - [Correction](base-correction.html)
     - [Analyse en Composantes Principales](acp-cours.html)
         - [Utilisation sous Python](acp-python.slides.html) 
         - [Demande](acp-demande.html)
