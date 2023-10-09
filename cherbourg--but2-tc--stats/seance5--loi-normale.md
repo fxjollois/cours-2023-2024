@@ -64,6 +64,11 @@ Reprendre fichier tips.csv
 > Ceci implique qu’il y a 95% de chances d’avoir une valeur entre -1,96
 > et 1,96 pour une loi normale *N*(0,1)
 
+## 5ème étape
+
+-   Dans la feuille avec les données `tips`, écrire dans `I2` la formule
+    suivante `=(A2-moyenne)/ecart-type`
+
 Si *X* suit une loi normale *N*(*m*,*σ*), il est possible de passer à
 une v.a. *Y* de loi normale *N*(0,1) en réalisant deux opérations :
 enlever la moyenne et diviser par l’écart-type
