@@ -30,6 +30,7 @@ Ces méthodes couvriront les problématiques de description statistique des donn
     - [Analyse en Composantes Principales](acp-cours.html)
         - [Utilisation sous Python](acp-python.slides.html) 
         - [Demande](acp-demande.html)
+            - [Correction Wine](acp-demande1-correction.html)
     - [Analyse Factorielles des Correspondances](afc-cours.html)
         - [Utilisation sous Python](afc-python.slides.html) 
         - [Demande](afc-demande.html)
