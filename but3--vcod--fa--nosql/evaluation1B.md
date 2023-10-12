@@ -85,9 +85,9 @@ Quelques points à noter :
 
 Vous devez déjà télécharger [le fichier `airbnb.json`](airbnb.json), et le mettre dans la collection `airbnb` de la base de données `test` (via *Compass* donc). Ensuite, une fois que vous aurez vérifié dans la console que vos données sont bien importées, vous pouvez répondre aux questions dans le formulaire ci-dessous.
 
-**ATTENTION A BIEN METTRE LE CODE MONGO ET PAS LE RESULTAT !!!**
+**ATTENTION A BIEN METTRE LE CODE ET PAS LE RESULTAT !!!**
 
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeeykS_UnnoSWQ8GFYSwaeePU4_OmhIEVWijvb4EldCE-QW9w/viewform?embedded=true" width="640" height="2784" frameborder="0" marginheight="0" marginwidth="0">Chargement…</iframe>
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdN74CskSAAAftcRNoPkmeEgQe-zHacSHOJnYmndA3G18QkmQ/viewform?embedded=true" width="640" height="2429" frameborder="0" marginheight="0" marginwidth="0">Chargement…</iframe>
 
 <!--
 1. Combien y-a-t'il de logements en tout dans la base ?
