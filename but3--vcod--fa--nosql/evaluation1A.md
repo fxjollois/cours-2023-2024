@@ -70,7 +70,7 @@ Les données sont accessibles sur le serveur distant, dans la collection **`movi
 
 **ATTENTION A BIEN METTRE LE CODE ET PAS LE RESULTAT !!!**
 
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdWjDf3dPvCIjpAI2JBNbRrSn7C_TGl0jLCmsCKrQw5Ztl91g/viewform?embedded=true" width="640" height="2429" frameborder="0" marginheight="0" marginwidth="0">Chargement…</iframe>
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdWjDf3dPvCIjpAI2JBNbRrSn7C_TGl0jLCmsCKrQw5Ztl91g/viewform?embedded=true" width="800" height="2429" frameborder="0" marginheight="0" marginwidth="0">Chargement…</iframe>
 
 <!--
 - Combien y-a-t'il de films en tout dans la base ?
