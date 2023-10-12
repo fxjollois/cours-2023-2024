@@ -66,9 +66,9 @@ Quelques points à noter :
 
 ## Questions
 
-Vous devez déjà télécharger [le fichier `movies.json`](movies.json), et le mettre dans la collection `movies` de la base de données `test` (via *Compass* donc). Ensuite, une fois que vous aurez vérifié dans la console que vos données sont bien importées, vous pouvez répondre aux questions dans le formulaire ci-dessous.
+Les données sont accessibles sur le serveur distant, dans la collection **`movies`** de la base de données **`sample_mflix`**.
 
-**ATTENTION A BIEN METTRE LE CODE MONGO ET PAS LE RESULTAT !!!**
+**ATTENTION A BIEN METTRE LE CODE ET PAS LE RESULTAT !!!**
 
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdWjDf3dPvCIjpAI2JBNbRrSn7C_TGl0jLCmsCKrQw5Ztl91g/viewform?embedded=true" width="640" height="2429" frameborder="0" marginheight="0" marginwidth="0">Chargement…</iframe>
 
