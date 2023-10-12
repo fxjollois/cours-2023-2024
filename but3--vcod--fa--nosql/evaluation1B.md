@@ -70,4 +70,4 @@ Les données sont accessibles sur le serveur distant, dans la collection **`movi
 
 **ATTENTION A BIEN METTRE LE CODE ET PAS LE RESULTAT !!!**
 
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdN74CskSAAAftcRNoPkmeEgQe-zHacSHOJnYmndA3G18QkmQ/viewform?embedded=true" width="640" height="2405" frameborder="0" marginheight="0" marginwidth="0">Chargement…</iframe>
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdN74CskSAAAftcRNoPkmeEgQe-zHacSHOJnYmndA3G18QkmQ/viewform?embedded=true" width="800" height="2405" frameborder="0" marginheight="0" marginwidth="0">Chargement…</iframe>
