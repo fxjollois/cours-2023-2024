@@ -38,13 +38,15 @@ Ces méthodes couvriront les problématiques de description statistique des donn
         - [Demande](afc-demande.html)
             - [Correction INSEE](afc-demande-correction.html)
 
-<!--
-- Séance 2 : 
+- Journée 2 : 
     - [Clustering avec CAH et *k*-means](classif-cours.html) 
         - [CAH sous Python](cah-python.slides.html) 
         - [*k*-means sous Python](kmeans-python.slides.html) 
+        - [DBSCAN sous Python](dbscan-python.slides.html) 
         - [Demande](classif-demande.html)
     - Tout ensemble
+
+<!--
 - Séance 3 :
     - Autres méthodes
         - [MDS]() ?
