@@ -46,6 +46,7 @@ Ces méthodes couvriront les problématiques de description statistique des donn
         - [Demande](classif-demande.html)
             - [Correction Wine](classif-demande1-correction.html)
             - [Correction WGI](classif-demande2-correction.html)
+            - [Correction Spotify](classif-demande3-correction.html)
     - Tout ensemble
 
 <!--
