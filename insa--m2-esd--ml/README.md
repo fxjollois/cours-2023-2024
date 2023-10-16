@@ -44,6 +44,8 @@ Ces méthodes couvriront les problématiques de description statistique des donn
         - [*k*-means sous Python](kmeans-python.slides.html) 
         - [DBSCAN sous Python](dbscan-python.slides.html) 
         - [Demande](classif-demande.html)
+            - [Correction Wine](classif-demande1-correction.html)
+            - [Correction WGI](classif-demande2-correction.html)
     - Tout ensemble
 
 <!--
