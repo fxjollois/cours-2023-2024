@@ -6,11 +6,11 @@
     - [correction](seance1-correction.html)
 2. [Manipulation et Visualisation de données](seance2-stat-python)
     - [correction](seance2-correction.html)
+3. [Représentation multidimensionnelle via l'ACP](seance3-acp.html)
+    - [sous `python`](seance3-acp-python.html)
 
 <!--
 
-3. [Représentation multidimensionnelle via l'ACP](seance3-acp.html)
-    - [sous `python`](seance3-acp-python.html)
     - [correction](seance3-correction.html)
 4. [Classification avec CAH et k-means](seance4-classif.html)
     - [sous `python`](seance4-classif-python.html)
