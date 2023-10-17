@@ -5,7 +5,11 @@ date: "BUT TC - 2ème année"
 output: html_document
 ---
 
-Reprendre fichier tips.csv
+Reprendre fichier `tips.csv` :
+
+- [Format Excel](tips.xlsx)
+- [Format Libre Office](tips.ods)
+- [Format Numbers](tips.numbers)
 
 ## 1ère étape :
 
@@ -77,5 +81,6 @@ $$
 ## A faire
 
 - Calculer les bornes de l'intervalle comprenant 95% des valeurs de la colonne `tip` (`B`) 
-- Regarder la répartition des valeurs dans cet intervalle et en-dehors
+  - Regarder la répartition des valeurs dans cet intervalle et en-dehors
+- Faire de même pour la variable `size`. Est-ce pertinent ?
 
