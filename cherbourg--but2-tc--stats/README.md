@@ -5,10 +5,9 @@
 - [Séance 1 - Rappels de Statistiques](seance1--rappels-stats.pdf)
 - [Séance 2 - Stats descriptives dans un tableau](seance2--stats-sur-tableur)
 - [Séance 3 - Lois et probabilités](seance3--lois-et-proba.pdf)
-- [Séance 4 - Exercices sur lois discrètes](seance4--exos-lois-et-probas)
-
+- [Séance 4 - Exercices sur lois et probas](seance4--exos-lois-et-probas)
+- [Séance 5 - Exercices sur la loi Normale](seance5--loi-normale.html)
 <!--
-- [Séance 5 - Exercices sur la loi Normale](seance4--loi-normale.html)
 
 - TC Cherbourg Stats :
     - Découpage du cours en petite séquence de 15 à 30 minutes
