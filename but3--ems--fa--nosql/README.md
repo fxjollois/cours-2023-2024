@@ -14,9 +14,9 @@ Planning prévu :
     - 12/01 : matin cours (???)
     - 25/01 : journée projet (???)
 - Groupe 2 ->
-    - 21/09 : Projet toute la journée (suite maladie)
+    - 21/09 : Projet toute la journée (suite maladie - travail SQL)
     - 19/10 : matin rien (car pb de train) et cours l'après-midi (Intro + Séance 2)
-    - 20/10 : matin cours (Séance 3) + projet l'après-midi (???)
+    - 20/10 : matin cours (Séance 3) + projet l'après-midi (réflexion passage SQL->NoSQL)
     - 03/11 : matin cours SAE (???) + projet l'après-midi (???)
     - 17/11 : projet le matin (???)
     - 14/12 : matin cours SAE (???) + après-midi cours NoSQL
