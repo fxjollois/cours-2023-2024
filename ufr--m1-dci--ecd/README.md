@@ -9,10 +9,10 @@
 3. [Représentation multidimensionnelle via l'ACP](seance3-acp.html)
     - [sous `python`](seance3-acp-python.html)
     - [correction Wine](seance3-correction-wine.html)
+    - [correction WGI](seance3-correction-wgi.html)
 
 <!--
 
-    - [correction](seance3-correction.html)
 4. [Classification avec CAH et k-means](seance4-classif.html)
     - [sous `python`](seance4-classif-python.html)
     - [correction](seance4-correction.html)
