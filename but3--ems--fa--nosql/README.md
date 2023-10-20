@@ -4,12 +4,24 @@
 
 <!--
 Planning prévu :
-- Groupe 1 -> CC|CCCP|CC|PCPC|PP
-    - Cours : 02/11 journée, 16/11 journée, 17/11 matin, 30/11 journée, 11/01 matin, 12/01 matin
-    - Projet : 17/11 après-midi, 09/01 matin, 11/01 après-midi, 22/01 matin, 25/01 après-midi, 
-- Groupe 2 -> CC|CCCP|C|PP|CC|PCP
-    - Cours : 21/09 journée, 19/10 journée, 20/10 matin, 03/11 matin, 14/12 journée, 11/01 après-midi
-    - Projet : 20/10 après-midi, 17/11 journée, 11/01 matin, 22/01 matin
+- Groupe 1 -> 
+    - 02/11 : matin cours (Intro + Séance 2) et après-midi cours (séance 3)
+    - 16/11 : matin cours (???) + après-midi cours (???)
+    - 17/11 : matin cours SAE (???) + après-midi projet (???)
+    - 30/11 : matin cours SAE (???) + après-midi cours SAE (???)
+    - 14/12 : après-midi projet (???)
+    - 11/01 : matin cours (???) + après-midi projet (???)
+    - 12/01 : matin cours (???)
+    - 25/01 : journée projet (???)
+- Groupe 2 ->
+    - 21/09 : Projet toute la journée (suite maladie)
+    - 19/10 : matin rien (car pb de train) et cours l'après-midi (Intro + Séance 2)
+    - 20/10 : matin cours (Séance 3) + projet l'après-midi (???)
+    - 03/11 : matin cours SAE (???) + projet l'après-midi (???)
+    - 17/11 : projet le matin (???)
+    - 14/12 : matin cours SAE (???) + après-midi cours NoSQL
+    - 11/01 : matin projet (???) + après-midi cours NoSQL
+    - 22/01 : matin projet
 %
 A ORGANISER COMME SUIT :
 - Séance 1 (3,5h) : NoSQL - Mongo
