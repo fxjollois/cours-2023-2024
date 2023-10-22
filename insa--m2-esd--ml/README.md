@@ -49,12 +49,14 @@ Ces méthodes couvriront les problématiques de description statistique des donn
             - [Correction Spotify](classif-demande3-correction.html)
     - Tout ensemble
 
+- Journée 3 :
+    - Quelques compléments
+        - [Analyse Factorielle des Correspondances Multiples](acm-python.slides.html)
+        - [AFC sur données quantitatives](afc-quanti.slides.html)
+        - [Classification sur facteurs de l'ACP](classif-sur-acp.slides.html)
+    - [TP récapitulatif](tp-recap.html)
+
 <!--
-- Séance 3 :
-    - Autres méthodes
-        - [MDS]() ?
-        - [DBSCAN](dbscan-python.slides.html) (voire BIRCH ou autres)
-        - [SOM]() ?
     - [Sujet TP noté]()
         - [Aide pour l'importation](tp-note-import.html)
 -->
