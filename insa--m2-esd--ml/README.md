@@ -56,6 +56,8 @@ Ces méthodes couvriront les problématiques de description statistique des donn
         - [Classification sur facteurs de l'ACP](classif-sur-acp.slides.html)
     - [TP récapitulatif](tp-recap.html)
         - [Correction](tp-recap-correction.html)
+    - [Sujet TP noté](tp-note.html)
+        - [Aide pour l'importation](tp-note-import.html)
 
 <!--
     - [Sujet TP noté](tp-note.html)
