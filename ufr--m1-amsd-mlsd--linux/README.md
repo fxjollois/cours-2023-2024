@@ -8,7 +8,6 @@
 
 - [Séance 2](seance2) : Scripts en langage système
     - [Demande](seance2-demande)
-    - [Correction](seance2-correction)
 
 <!--
 --- 3 séances projet : création VM + tout le reste
