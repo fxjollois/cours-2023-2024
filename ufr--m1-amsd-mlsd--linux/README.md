@@ -9,6 +9,9 @@
 - [Séance 2](seance2) : Scripts en langage système
     - [Demande](seance2-demande)
 
+- [Séance 3](seance3) : Correction et commentaires sur les scripts `shell`
+    - [demande](seance3-demande)
+    
 <!--
 --- 3 séances projet : création VM + tout le reste
 - Séance 3 : gestion des scripts R et python et début des demandes pour mini-projet
