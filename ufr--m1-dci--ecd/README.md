@@ -10,11 +10,10 @@
     - [sous `python`](seance3-acp-python.html)
     - [correction Wine](seance3-correction-wine.html)
     - [correction WGI](seance3-correction-wgi.html)
-
-<!--
-
 4. [Classification avec CAH et k-means](seance4-classif.html)
     - [sous `python`](seance4-classif-python.html)
+
+<!--
     - [correction](seance4-correction.html)
 5. [Application sur données réelles](seance5-donnees-reelles.html)
     - [correction](seance5-correction.html)
