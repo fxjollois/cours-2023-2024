@@ -17,9 +17,9 @@ Planning prévu :
     - 21/09 : Projet toute la journée (suite maladie - travail SQL)
     - 19/10 : matin rien (car pb de train) et cours l'après-midi (Intro + Séance 2)
     - 20/10 : matin cours (Séance 3) + projet l'après-midi (réflexion passage SQL->NoSQL)
-    - 03/11 : matin cours SAE (???) + projet l'après-midi (???)
+    - 03/11 : matin cours SAE (séance 3) + projet l'après-midi (suite du travail à faire du matin)
     - 17/11 : projet le matin (???)
-    - 14/12 : matin cours SAE (???) + après-midi cours NoSQL
+    - 14/12 : matin cours SAE (???) + après-midi cours NoSQL (évaluation ?)
     - 11/01 : matin projet (???) + après-midi cours NoSQL
     - 22/01 : matin projet
 %
@@ -79,7 +79,10 @@ A ORGANISER COMME SUIT :
 ## Partie SAE : *Migration de données vers ou depuis un environnement NoSQL*
 
 - [Séance 1 - Présentation et premières requêtes](sae-seance1)
+
 - [Séance 2 - Réflexion sur le passage du modéle relationnel à un modèle à base de documents](sae-seance2)
+
+- [Séance 3 - Passage SQL <-> NoSQL sous Python](sae-seance3)
 
 
 <!--
