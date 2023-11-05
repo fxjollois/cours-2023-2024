@@ -7,7 +7,7 @@
 - [Séance 3 - Lois et probabilités](seance3--lois-et-proba.pdf)
 - [Séance 4 - Exercices sur lois et probas](seance4--exos-lois-et-probas)
 - [Séance 5 - Exercices sur la loi Normale](seance5--loi-normale.html)
-
+- [Séance 6 - Estimation par intervalles](seance6--estimation-par-intervalles)
   
 <!--
 
