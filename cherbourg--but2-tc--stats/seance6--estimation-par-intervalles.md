@@ -1,8 +1,6 @@
 # Estimation par intervalles
 
-## [Partie cours]()
-
-Cliquer sur le titre ci-dessus pour voir la partie cours
+## Partie cours
 
 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQzR22EVryOg3xh4g0_ejztWJSBoOikYkE626lAKy0c3r1qxeHHG4cMKlNutv_1C2OXg-eDJlrvRebo/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
