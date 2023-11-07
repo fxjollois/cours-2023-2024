@@ -31,7 +31,7 @@ $ sudo apt install mailutils
     - Le code doit récupérer le fichier `JSON` et le stocker dans un fichier avec l'horodatage dans le nom de fichier
         - Attention au répertoire de sauvegarde de ce fichier
     
-- Programmer ces 3 codes pour qu'ils s'exécutent toutes les 5 minutes du 10 au 13 novembre
+- Programmer ces 3 codes pour qu'ils s'exécutent toutes les 5 minutes du 18 au 21 novembre
 
 ## Rendus
 
