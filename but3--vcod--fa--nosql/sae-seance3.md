@@ -21,8 +21,6 @@ Dans cet exemple, nous allons utiliser la petite base de données `Gymnase2000`,
 
 ![Schéma ER de World.sqlite](https://fxjollois.github.io/donnees/Gymnase2000/Gymnase2000.png)
 
-![Schéma ER de World.sqlite](../../donnees/Gymnase2000/Gymnase2000.png)
-
 Dans ce schéma, après analyse, on peut décider de créer **2 collections** :
 
 - **Sportifs** : chaque document concernera un seul *sportif*, dans lequel on notera en plus les sports qu'il *joue*, qu'il *entraîne* et qu'il *arbitre*, sous la forme d'une chaîne de caractère. On devra aussi ajouter l'identifiant du *sportif conseiller* ;
