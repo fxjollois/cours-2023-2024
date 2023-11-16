@@ -4,24 +4,27 @@
 
 <!--
 Planning prévu :
-- Groupe 1 -> 
-    - 02/11 : matin cours (Intro + Séance 2) et après-midi cours (séance 3)
-    - 16/11 : matin cours (???) + après-midi cours (???)
-    - 17/11 : matin cours SAE (???) + après-midi projet (???)
-    - 30/11 : matin cours SAE (???) + après-midi cours SAE (???)
-    - 14/12 : après-midi projet (???)
-    - 11/01 : matin cours (???) + après-midi projet (???)
+- Groupe 31 -> 
+    - 02/11 : matin projet (travail SQL) car tempête + après-midi cours (Intro + Séance 2)
+    - 03/11 : matin cours (séance 3)
+    -
+    - 16/11 : matin cours (suite séance 3 - séance 4 récap) + après-midi cours (suite séance 4)
+    - 17/11 : matin cours SAE (séance 3) + après-midi projet (suite du travail à faire du matin)
+    - 30/11 : matin cours SAE (-> évaluation NoSQL) + après-midi cours SAE (-> projet réflexion passage SQL->NoSQL)
+    - 14/12 : après-midi projet (application sur le sujet de la SAE)
+    - 11/01 : matin cours (-> SAE suivi - commune avec 32) + après-midi projet (application sur le sujet de la SAE)
     - 12/01 : matin cours (???)
-    - 25/01 : journée projet (???)
-- Groupe 2 ->
+    - 25/01 : journée projet (finalisation SAE)
+- Groupe 32 ->
     - 21/09 : Projet toute la journée (suite maladie - travail SQL)
     - 19/10 : matin rien (car pb de train) et cours l'après-midi (Intro + Séance 2)
     - 20/10 : matin cours (Séance 3) + projet l'après-midi (réflexion passage SQL->NoSQL)
     - 03/11 : matin cours SAE (séance 3) + projet l'après-midi (suite du travail à faire du matin)
-    - 17/11 : projet le matin (???)
-    - 14/12 : matin cours SAE (???) + après-midi cours NoSQL (évaluation ?)
-    - 11/01 : matin projet (???) + après-midi cours NoSQL
-    - 22/01 : matin projet
+    -
+    - 17/11 : projet le matin (application sur le sujet de la SAE)
+    - 14/12 : matin cours SAE (-> séance 4) + après-midi cours NoSQL (évaluation NoSQL)
+    - 11/01 : matin projet (-> SAE suivi - commune avec 31) + après-midi cours (???)
+    - 22/01 : matin projet (finalisation SAE)
 %
 A ORGANISER COMME SUIT :
 - Séance 1 (3,5h) : NoSQL - Mongo
@@ -40,6 +43,7 @@ A ORGANISER COMME SUIT :
 - [Introduction au NoSQL](https://docs.google.com/presentation/d/e/2PACX-1vRi9gT1ZSwXgaDcRYQ4q-srOtJYtdT6hOlo0E6cYt5E9Vk11LJYusYaxa0FNWM95pyO9Jg9SZc9faWJ/pub?start=false&loop=false&delayms=3000)
 - [Premiers pas avec Mongo](res-seance2)
 - [Agrégats et plus encore](res-seance3)
+- [Récapitulatif](res-seance4)
 
 <!--
 - Séance 1 : 
@@ -83,7 +87,7 @@ A ORGANISER COMME SUIT :
 - [Séance 2 - Réflexion sur le passage du modéle relationnel à un modèle à base de documents](sae-seance2)
 
 - [Séance 3 - Passage SQL <-> NoSQL sous Python](sae-seance3)
-
+    - Groupe 31 : [Espace de rendu](https://cloud.parisdescartes.fr/index.php/s/2NNnrECPskjC6Pj)
 
 <!--
 - Séance 1 :
