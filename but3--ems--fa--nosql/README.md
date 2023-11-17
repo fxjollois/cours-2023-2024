@@ -9,8 +9,8 @@ Planning prévu :
     - 03/11 : matin cours (séance 3)
     -
     - 16/11 : matin cours (suite séance 3 - séance 4 récap) + après-midi cours (suite séance 4)
-    - 17/11 : matin cours SAE (séance 3) + après-midi projet (suite du travail à faire du matin)
-    - 30/11 : matin cours SAE (-> évaluation NoSQL) + après-midi cours SAE (-> projet réflexion passage SQL->NoSQL)
+    - 17/11 : matin cours SAE (séance 3)
+    - 30/11 : matin cours SAE (-> évaluation NoSQL) + après-midi cours SAE (suite séance 3)
     - 14/12 : après-midi projet (application sur le sujet de la SAE)
     - 11/01 : matin cours (-> SAE suivi - commune avec 32) + après-midi projet (application sur le sujet de la SAE)
     - 12/01 : matin cours (???)
@@ -87,7 +87,7 @@ A ORGANISER COMME SUIT :
 - [Séance 2 - Réflexion sur le passage du modéle relationnel à un modèle à base de documents](sae-seance2)
 
 - [Séance 3 - Passage SQL <-> NoSQL sous Python](sae-seance3)
-    - Groupe 31 : [Espace de rendu](https://cloud.parisdescartes.fr/index.php/s/2NNnrECPskjC6Pj)
+    <!-- - Groupe 31 : [Espace de rendu](https://cloud.parisdescartes.fr/index.php/s/2NNnrECPskjC6Pj) -->
 
 <!--
 - Séance 1 :
