@@ -13,9 +13,9 @@
 4. [Classification avec CAH et k-means](seance4-classif.html)
     - [sous `python`](seance4-classif-python.html)
     - [correction](seance4-correction.html)
+5. [Application sur données réelles](seance5-donnees-reelles.html)
 
 <!--
-5. [Application sur données réelles](seance5-donnees-reelles.html)
     - [correction](seance5-correction.html)
 6. [Modélisation via régression](seance6-reglog.html)
     - [sous `python`](seance6-reglog-python.html)
