@@ -8,6 +8,7 @@
 - [Séance 4 - Exercices sur lois et probas](seance4--exos-lois-et-probas)
 - [Séance 5 - Exercices sur la loi Normale](seance5--loi-normale.html)
 - [Séance 6 - Estimation par intervalles](seance6--estimation-par-intervalles)
+- [Séance 7 - Application sur données réelles 1](seance7--application1)
   
 <!--
 
