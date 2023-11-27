@@ -23,4 +23,5 @@ Pour les villes de Paris et de Lyon, nous avons un échantillon de logements Air
     - Vous pouvez ré-utiliser la colonne créée précédemment
     - La fonction `MOYENNE.SI()` permet de calculer une moyenne sur une colonne, pour les lignes qui respectent une condition particulière sur une autre colonne
 - La proportion de logement ayant le Wifi est-elle la même entre les logements complets (“Entire home/appt”) et les autres logements ?
+    - La fonction `NB.SI.ENS()` permet de faire un décompte du nombre de lignes respectant plusieurs critères
 - Même question pour la télévision ?
