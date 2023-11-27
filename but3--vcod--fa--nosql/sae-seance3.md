@@ -19,7 +19,7 @@ Ce code permet de se connecter à la BD `SAE` du serveur Mongo. Si celle-ci n'ex
 
 Dans cet exemple, nous allons utiliser la petite base de données `Gymnase2000`, disponible au format SQLite [sur ce lien](https://fxjollois.github.io/donnees/Gymnase2000/Gymnase2000.sqlite). Voici son schéma relationnel
 
-![Schéma ER de World.sqlite](https://fxjollois.github.io/donnees/Gymnase2000/Gymnase2000.png)
+![Schéma ER de Gymnase2000.sqlite](https://fxjollois.github.io/donnees/Gymnase2000/Gymnase2000.png)
 
 Dans ce schéma, après analyse, on peut décider de créer **2 collections** :
 
