@@ -9,6 +9,7 @@
 - [Séance 5 - Exercices sur la loi Normale](seance5--loi-normale.html)
 - [Séance 6 - Estimation par intervalles](seance6--estimation-par-intervalles)
 - [Séance 7 - Application sur données réelles 1](seance7--application1)
+- [Séance 8 - Application sur données réelles 2](seance8--application2)
   
 <!--
 
