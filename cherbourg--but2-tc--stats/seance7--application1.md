@@ -2,7 +2,7 @@
 
 ## Airbnb
 
-Fichier de base à télécharger : [`seance7--airbnb.xlsx`](seance7--airbnb.xlsx)
+Fichier de base à télécharger : [seance7--airbnb.xlsx](seance7--airbnb.xlsx)
 
 Ce fichier comporte 2 feuilles :
 - AirBnB-Paris
