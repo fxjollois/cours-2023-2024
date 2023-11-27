@@ -2,7 +2,7 @@
 
 ## Adult
 
-Fichier de base à télécharger : [seance8--adult.xlsx](seance78--adult.xlsx)
+Fichier de base à télécharger : [seance8--adult.xlsx](seance8--adult.xlsx)
 
 Dans ce fichier, nous avons des données provenant d’une étude sur une enquête aux USA sur le salaire (inférieur ou supérieur à 50K$), dont nous avons gardé uniquement certaines variables (âge, niveau d’études, sexe, nombre d’heures par semaine, salaire).
 
