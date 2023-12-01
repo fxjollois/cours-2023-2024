@@ -19,9 +19,9 @@
     - [sous `python`](seance6-reglog-python.html)
     - [correction](seance6-correction.html)
 7. [Modélisation via d'autres modèles](seance7-autres-python.html)
+    - [correction](seance7-correction.html)
 
 <!--
-    - [correction](seance7-correction.html)
 
 - [Sujet du TP](sujet-tp.html)
 
