@@ -14,13 +14,13 @@
     - [sous `python`](seance4-classif-python.html)
     - [correction](seance4-correction.html)
 5. [Application sur données réelles](seance5-donnees-reelles.html)
+    - [correction](seance5-correction.html)
 6. [Modélisation via régression](seance6-reglog.html)
     - [sous `python`](seance6-reglog-python.html)
     - [correction](seance6-correction.html)
+7. [Modélisation via d'autres modèles](seance7-autres-python.html)
 
 <!--
-    - [correction](seance5-correction.html)
-7. [Modélisation via d'autres modèles](seance7-autres-python.html)
     - [correction](seance7-correction.html)
 
 - [Sujet du TP](sujet-tp.html)
