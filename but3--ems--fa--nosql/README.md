@@ -87,7 +87,7 @@ A ORGANISER COMME SUIT :
 - [Séance 2 - Réflexion sur le passage du modéle relationnel à un modèle à base de documents](sae-seance2)
 
 - [Séance 3 - Passage SQL <-> NoSQL sous Python](sae-seance3)
-    <!-- - Groupe 31 : [Espace de rendu](https://cloud.parisdescartes.fr/index.php/s/2NNnrECPskjC6Pj) -->
+    - Groupe 31 : [Espace de rendu](https://cloud.parisdescartes.fr/index.php/s/2NNnrECPskjC6Pj) 
 
 <!--
 - Séance 1 :
