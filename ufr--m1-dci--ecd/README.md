@@ -20,6 +20,7 @@
     - [correction](seance6-correction.html)
 7. [Modélisation via d'autres modèles](seance7-autres-python.html)
     - [correction](seance7-correction.html)
+8. [Application sur données réelles](seance8-supervise.html)
 
 <!--
 
