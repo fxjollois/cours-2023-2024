@@ -14620,7 +14620,8 @@ a.anchor-link {
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pandas</span><span class="o">.</span><span class="n">crosstab</span><span class="p">(</span><span class="n">y</span><span class="o">.</span><span class="n">income</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;.&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">),</span> <span class="s2">&quot;Nb&quot;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">y</span> <span class="o">=</span> <span class="n">y</span><span class="o">.</span><span class="n">assign</span><span class="p">(</span><span class="n">income</span> <span class="o">=</span> <span class="n">y</span><span class="o">.</span><span class="n">income</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;.&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">))</span>
+<span class="n">pandas</span><span class="o">.</span><span class="n">crosstab</span><span class="p">(</span><span class="n">y</span><span class="o">.</span><span class="n">income</span><span class="p">,</span> <span class="s2">&quot;Nb&quot;</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -14686,20 +14687,6 @@ a.anchor-link {
 
 </div>
 
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">y</span> <span class="o">=</span> <span class="n">y</span><span class="o">.</span><span class="n">income</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;.&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
@@ -14710,7 +14697,7 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">X_train</span> <span class="o">=</span> <span class="n">X</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="n">frac</span> <span class="o">=</span> <span class="o">.</span><span class="mi">8</span><span class="p">)</span>
@@ -14725,7 +14712,7 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">y_train</span> <span class="o">=</span> <span class="n">y</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">X_train</span><span class="o">.</span><span class="n">index</span><span class="p">]</span>
@@ -14740,10 +14727,168 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">X_train</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[8]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>age</th>
+      <th>workclass</th>
+      <th>fnlwgt</th>
+      <th>education</th>
+      <th>education-num</th>
+      <th>marital-status</th>
+      <th>occupation</th>
+      <th>relationship</th>
+      <th>race</th>
+      <th>sex</th>
+      <th>capital-gain</th>
+      <th>capital-loss</th>
+      <th>hours-per-week</th>
+      <th>native-country</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>13343</th>
+      <td>56</td>
+      <td>Private</td>
+      <td>208451</td>
+      <td>Bachelors</td>
+      <td>13</td>
+      <td>Married-civ-spouse</td>
+      <td>Prof-specialty</td>
+      <td>Husband</td>
+      <td>White</td>
+      <td>Male</td>
+      <td>0</td>
+      <td>0</td>
+      <td>40</td>
+      <td>United-States</td>
+    </tr>
+    <tr>
+      <th>31586</th>
+      <td>49</td>
+      <td>Private</td>
+      <td>104542</td>
+      <td>HS-grad</td>
+      <td>9</td>
+      <td>Divorced</td>
+      <td>Adm-clerical</td>
+      <td>Not-in-family</td>
+      <td>White</td>
+      <td>Female</td>
+      <td>0</td>
+      <td>0</td>
+      <td>40</td>
+      <td>United-States</td>
+    </tr>
+    <tr>
+      <th>29245</th>
+      <td>58</td>
+      <td>Local-gov</td>
+      <td>32855</td>
+      <td>HS-grad</td>
+      <td>9</td>
+      <td>Married-civ-spouse</td>
+      <td>Transport-moving</td>
+      <td>Husband</td>
+      <td>White</td>
+      <td>Male</td>
+      <td>0</td>
+      <td>0</td>
+      <td>48</td>
+      <td>United-States</td>
+    </tr>
+    <tr>
+      <th>24672</th>
+      <td>28</td>
+      <td>Private</td>
+      <td>293926</td>
+      <td>HS-grad</td>
+      <td>9</td>
+      <td>Married-civ-spouse</td>
+      <td>Craft-repair</td>
+      <td>Husband</td>
+      <td>White</td>
+      <td>Male</td>
+      <td>0</td>
+      <td>1740</td>
+      <td>30</td>
+      <td>United-States</td>
+    </tr>
+    <tr>
+      <th>9873</th>
+      <td>47</td>
+      <td>Local-gov</td>
+      <td>285060</td>
+      <td>Masters</td>
+      <td>14</td>
+      <td>Married-civ-spouse</td>
+      <td>Exec-managerial</td>
+      <td>Husband</td>
+      <td>White</td>
+      <td>Male</td>
+      <td>0</td>
+      <td>1977</td>
+      <td>41</td>
+      <td>United-States</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">y_train</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 
      </div>
@@ -14782,107 +14927,29 @@ a.anchor-link {
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>age</th>
-      <th>workclass</th>
-      <th>fnlwgt</th>
-      <th>education</th>
-      <th>education-num</th>
-      <th>marital-status</th>
-      <th>occupation</th>
-      <th>relationship</th>
-      <th>race</th>
-      <th>sex</th>
-      <th>capital-gain</th>
-      <th>capital-loss</th>
-      <th>hours-per-week</th>
-      <th>native-country</th>
+      <th>income</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th>10519</th>
-      <td>25</td>
-      <td>Private</td>
-      <td>199947</td>
-      <td>HS-grad</td>
-      <td>9</td>
-      <td>Married-civ-spouse</td>
-      <td>Adm-clerical</td>
-      <td>Wife</td>
-      <td>White</td>
-      <td>Female</td>
-      <td>0</td>
-      <td>0</td>
-      <td>40</td>
-      <td>United-States</td>
+      <th>13343</th>
+      <td>&gt;50K</td>
     </tr>
     <tr>
-      <th>28515</th>
-      <td>35</td>
-      <td>Private</td>
-      <td>287658</td>
-      <td>Assoc-acdm</td>
-      <td>12</td>
-      <td>Never-married</td>
-      <td>Transport-moving</td>
-      <td>Not-in-family</td>
-      <td>Black</td>
-      <td>Male</td>
-      <td>0</td>
-      <td>0</td>
-      <td>30</td>
-      <td>Jamaica</td>
+      <th>31586</th>
+      <td>&lt;=50K</td>
     </tr>
     <tr>
-      <th>43291</th>
-      <td>42</td>
-      <td>Private</td>
-      <td>200610</td>
-      <td>HS-grad</td>
-      <td>9</td>
-      <td>Married-civ-spouse</td>
-      <td>Craft-repair</td>
-      <td>Husband</td>
-      <td>White</td>
-      <td>Male</td>
-      <td>0</td>
-      <td>1740</td>
-      <td>60</td>
-      <td>United-States</td>
+      <th>29245</th>
+      <td>&lt;=50K</td>
     </tr>
     <tr>
-      <th>48125</th>
-      <td>42</td>
-      <td>Private</td>
-      <td>167650</td>
-      <td>Some-college</td>
-      <td>10</td>
-      <td>Married-civ-spouse</td>
-      <td>Machine-op-inspct</td>
-      <td>Husband</td>
-      <td>White</td>
-      <td>Male</td>
-      <td>0</td>
-      <td>0</td>
-      <td>35</td>
-      <td>United-States</td>
+      <th>24672</th>
+      <td>&lt;=50K</td>
     </tr>
     <tr>
-      <th>17818</th>
-      <td>39</td>
-      <td>Private</td>
-      <td>216129</td>
-      <td>Assoc-acdm</td>
-      <td>12</td>
-      <td>Divorced</td>
-      <td>Exec-managerial</td>
-      <td>Unmarried</td>
-      <td>Black</td>
-      <td>Female</td>
-      <td>0</td>
-      <td>0</td>
-      <td>35</td>
-      <td>Jamaica</td>
+      <th>9873</th>
+      <td>&gt;50K</td>
     </tr>
   </tbody>
 </table>
@@ -14901,48 +14968,6 @@ a.anchor-link {
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[10]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">y_train</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[10]:</div>
-
-
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>10519    &lt;=50K
-28515    &lt;=50K
-43291    &lt;=50K
-48125    &lt;=50K
-17818    &lt;=50K
-Name: income, dtype: object</pre>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">X_test</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 
@@ -14959,7 +14984,7 @@ Name: income, dtype: object</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[11]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[10]:</div>
 
 
 
@@ -15000,87 +15025,87 @@ Name: income, dtype: object</pre>
   </thead>
   <tbody>
     <tr>
-      <th>0</th>
-      <td>39</td>
-      <td>State-gov</td>
-      <td>77516</td>
-      <td>Bachelors</td>
-      <td>13</td>
-      <td>Never-married</td>
-      <td>Adm-clerical</td>
-      <td>Not-in-family</td>
-      <td>White</td>
-      <td>Male</td>
-      <td>2174</td>
-      <td>0</td>
-      <td>40</td>
-      <td>United-States</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>50</td>
-      <td>Self-emp-not-inc</td>
-      <td>83311</td>
-      <td>Bachelors</td>
-      <td>13</td>
-      <td>Married-civ-spouse</td>
-      <td>Exec-managerial</td>
-      <td>Husband</td>
-      <td>White</td>
-      <td>Male</td>
-      <td>0</td>
-      <td>0</td>
-      <td>13</td>
-      <td>United-States</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>28</td>
+      <th>10</th>
+      <td>37</td>
       <td>Private</td>
-      <td>338409</td>
-      <td>Bachelors</td>
-      <td>13</td>
-      <td>Married-civ-spouse</td>
-      <td>Prof-specialty</td>
-      <td>Wife</td>
-      <td>Black</td>
-      <td>Female</td>
-      <td>0</td>
-      <td>0</td>
-      <td>40</td>
-      <td>Cuba</td>
-    </tr>
-    <tr>
-      <th>7</th>
-      <td>52</td>
-      <td>Self-emp-not-inc</td>
-      <td>209642</td>
-      <td>HS-grad</td>
-      <td>9</td>
+      <td>280464</td>
+      <td>Some-college</td>
+      <td>10</td>
       <td>Married-civ-spouse</td>
       <td>Exec-managerial</td>
       <td>Husband</td>
-      <td>White</td>
+      <td>Black</td>
+      <td>Male</td>
+      <td>0</td>
+      <td>0</td>
+      <td>80</td>
+      <td>United-States</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>40</td>
+      <td>Private</td>
+      <td>121772</td>
+      <td>Assoc-voc</td>
+      <td>11</td>
+      <td>Married-civ-spouse</td>
+      <td>Craft-repair</td>
+      <td>Husband</td>
+      <td>Asian-Pac-Islander</td>
+      <td>Male</td>
+      <td>0</td>
+      <td>0</td>
+      <td>40</td>
+      <td>?</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>34</td>
+      <td>Private</td>
+      <td>245487</td>
+      <td>7th-8th</td>
+      <td>4</td>
+      <td>Married-civ-spouse</td>
+      <td>Transport-moving</td>
+      <td>Husband</td>
+      <td>Amer-Indian-Eskimo</td>
       <td>Male</td>
       <td>0</td>
       <td>0</td>
       <td>45</td>
+      <td>Mexico</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>35</td>
+      <td>Federal-gov</td>
+      <td>76845</td>
+      <td>9th</td>
+      <td>5</td>
+      <td>Married-civ-spouse</td>
+      <td>Farming-fishing</td>
+      <td>Husband</td>
+      <td>Black</td>
+      <td>Male</td>
+      <td>0</td>
+      <td>0</td>
+      <td>40</td>
       <td>United-States</td>
     </tr>
     <tr>
-      <th>9</th>
-      <td>42</td>
+      <th>23</th>
+      <td>43</td>
       <td>Private</td>
-      <td>159449</td>
-      <td>Bachelors</td>
-      <td>13</td>
+      <td>117037</td>
+      <td>11th</td>
+      <td>7</td>
       <td>Married-civ-spouse</td>
-      <td>Exec-managerial</td>
+      <td>Transport-moving</td>
       <td>Husband</td>
       <td>White</td>
       <td>Male</td>
-      <td>5178</td>
       <td>0</td>
+      <td>2042</td>
       <td>40</td>
       <td>United-States</td>
     </tr>
@@ -15098,7 +15123,7 @@ Name: income, dtype: object</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">y_test</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
@@ -15117,18 +15142,56 @@ Name: income, dtype: object</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[12]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[11]:</div>
 
 
 
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
 
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>0    &lt;=50K
-1    &lt;=50K
-4    &lt;=50K
-7     &gt;50K
-9     &gt;50K
-Name: income, dtype: object</pre>
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>income</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>10</th>
+      <td>&gt;50K</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>&gt;50K</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>&lt;=50K</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>&lt;=50K</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>&lt;=50K</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 </div>
 
 </div>
