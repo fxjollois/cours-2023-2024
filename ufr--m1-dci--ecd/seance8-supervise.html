@@ -14700,7 +14700,7 @@ a.anchor-link {
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">X_train</span> <span class="o">=</span> <span class="n">X</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="n">frac</span> <span class="o">=</span> <span class="o">.</span><span class="mi">8</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">X_train</span> <span class="o">=</span> <span class="n">X</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="n">frac</span> <span class="o">=</span> <span class="o">.</span><span class="mi">75</span><span class="p">)</span>
 <span class="n">X_test</span> <span class="o">=</span> <span class="n">X</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">X_train</span><span class="o">.</span><span class="n">index</span><span class="p">)</span>
 </pre></div>
 
@@ -14787,32 +14787,15 @@ a.anchor-link {
   </thead>
   <tbody>
     <tr>
-      <th>13343</th>
-      <td>56</td>
-      <td>Private</td>
-      <td>208451</td>
-      <td>Bachelors</td>
-      <td>13</td>
-      <td>Married-civ-spouse</td>
-      <td>Prof-specialty</td>
-      <td>Husband</td>
-      <td>White</td>
-      <td>Male</td>
-      <td>0</td>
-      <td>0</td>
-      <td>40</td>
-      <td>United-States</td>
-    </tr>
-    <tr>
-      <th>31586</th>
-      <td>49</td>
-      <td>Private</td>
-      <td>104542</td>
+      <th>29451</th>
+      <td>32</td>
+      <td>Self-emp-not-inc</td>
+      <td>62272</td>
       <td>HS-grad</td>
       <td>9</td>
       <td>Divorced</td>
-      <td>Adm-clerical</td>
-      <td>Not-in-family</td>
+      <td>Exec-managerial</td>
+      <td>Unmarried</td>
       <td>White</td>
       <td>Female</td>
       <td>0</td>
@@ -14821,55 +14804,72 @@ a.anchor-link {
       <td>United-States</td>
     </tr>
     <tr>
-      <th>29245</th>
-      <td>58</td>
-      <td>Local-gov</td>
-      <td>32855</td>
-      <td>HS-grad</td>
-      <td>9</td>
+      <th>43497</th>
+      <td>39</td>
+      <td>Self-emp-inc</td>
+      <td>172927</td>
+      <td>Assoc-acdm</td>
+      <td>12</td>
       <td>Married-civ-spouse</td>
-      <td>Transport-moving</td>
+      <td>Prof-specialty</td>
       <td>Husband</td>
       <td>White</td>
       <td>Male</td>
+      <td>15024</td>
       <td>0</td>
-      <td>0</td>
+      <td>50</td>
+      <td>United-States</td>
+    </tr>
+    <tr>
+      <th>8220</th>
       <td>48</td>
-      <td>United-States</td>
-    </tr>
-    <tr>
-      <th>24672</th>
-      <td>28</td>
       <td>Private</td>
-      <td>293926</td>
-      <td>HS-grad</td>
-      <td>9</td>
+      <td>125120</td>
+      <td>Some-college</td>
+      <td>10</td>
       <td>Married-civ-spouse</td>
-      <td>Craft-repair</td>
-      <td>Husband</td>
+      <td>Adm-clerical</td>
+      <td>Wife</td>
       <td>White</td>
-      <td>Male</td>
+      <td>Female</td>
       <td>0</td>
-      <td>1740</td>
-      <td>30</td>
+      <td>0</td>
+      <td>37</td>
       <td>United-States</td>
     </tr>
     <tr>
-      <th>9873</th>
-      <td>47</td>
-      <td>Local-gov</td>
-      <td>285060</td>
-      <td>Masters</td>
-      <td>14</td>
+      <th>11381</th>
+      <td>56</td>
+      <td>State-gov</td>
+      <td>175057</td>
+      <td>Bachelors</td>
+      <td>13</td>
       <td>Married-civ-spouse</td>
       <td>Exec-managerial</td>
       <td>Husband</td>
       <td>White</td>
       <td>Male</td>
       <td>0</td>
-      <td>1977</td>
-      <td>41</td>
+      <td>0</td>
+      <td>40</td>
       <td>United-States</td>
+    </tr>
+    <tr>
+      <th>38963</th>
+      <td>81</td>
+      <td>Self-emp-inc</td>
+      <td>104443</td>
+      <td>HS-grad</td>
+      <td>9</td>
+      <td>Widowed</td>
+      <td>Sales</td>
+      <td>Not-in-family</td>
+      <td>White</td>
+      <td>Female</td>
+      <td>0</td>
+      <td>0</td>
+      <td>40</td>
+      <td>NaN</td>
     </tr>
   </tbody>
 </table>
@@ -14932,24 +14932,24 @@ a.anchor-link {
   </thead>
   <tbody>
     <tr>
-      <th>13343</th>
+      <th>29451</th>
+      <td>&lt;=50K</td>
+    </tr>
+    <tr>
+      <th>43497</th>
       <td>&gt;50K</td>
     </tr>
     <tr>
-      <th>31586</th>
+      <th>8220</th>
       <td>&lt;=50K</td>
     </tr>
     <tr>
-      <th>29245</th>
+      <th>11381</th>
       <td>&lt;=50K</td>
     </tr>
     <tr>
-      <th>24672</th>
+      <th>38963</th>
       <td>&lt;=50K</td>
-    </tr>
-    <tr>
-      <th>9873</th>
-      <td>&gt;50K</td>
     </tr>
   </tbody>
 </table>
@@ -15025,88 +15025,88 @@ a.anchor-link {
   </thead>
   <tbody>
     <tr>
-      <th>10</th>
-      <td>37</td>
+      <th>2</th>
+      <td>38</td>
       <td>Private</td>
-      <td>280464</td>
-      <td>Some-college</td>
-      <td>10</td>
-      <td>Married-civ-spouse</td>
-      <td>Exec-managerial</td>
-      <td>Husband</td>
-      <td>Black</td>
-      <td>Male</td>
-      <td>0</td>
-      <td>0</td>
-      <td>80</td>
-      <td>United-States</td>
-    </tr>
-    <tr>
-      <th>14</th>
-      <td>40</td>
-      <td>Private</td>
-      <td>121772</td>
-      <td>Assoc-voc</td>
-      <td>11</td>
-      <td>Married-civ-spouse</td>
-      <td>Craft-repair</td>
-      <td>Husband</td>
-      <td>Asian-Pac-Islander</td>
-      <td>Male</td>
-      <td>0</td>
-      <td>0</td>
-      <td>40</td>
-      <td>?</td>
-    </tr>
-    <tr>
-      <th>15</th>
-      <td>34</td>
-      <td>Private</td>
-      <td>245487</td>
-      <td>7th-8th</td>
-      <td>4</td>
-      <td>Married-civ-spouse</td>
-      <td>Transport-moving</td>
-      <td>Husband</td>
-      <td>Amer-Indian-Eskimo</td>
-      <td>Male</td>
-      <td>0</td>
-      <td>0</td>
-      <td>45</td>
-      <td>Mexico</td>
-    </tr>
-    <tr>
-      <th>22</th>
-      <td>35</td>
-      <td>Federal-gov</td>
-      <td>76845</td>
-      <td>9th</td>
-      <td>5</td>
-      <td>Married-civ-spouse</td>
-      <td>Farming-fishing</td>
-      <td>Husband</td>
-      <td>Black</td>
-      <td>Male</td>
-      <td>0</td>
-      <td>0</td>
-      <td>40</td>
-      <td>United-States</td>
-    </tr>
-    <tr>
-      <th>23</th>
-      <td>43</td>
-      <td>Private</td>
-      <td>117037</td>
-      <td>11th</td>
-      <td>7</td>
-      <td>Married-civ-spouse</td>
-      <td>Transport-moving</td>
-      <td>Husband</td>
+      <td>215646</td>
+      <td>HS-grad</td>
+      <td>9</td>
+      <td>Divorced</td>
+      <td>Handlers-cleaners</td>
+      <td>Not-in-family</td>
       <td>White</td>
       <td>Male</td>
       <td>0</td>
-      <td>2042</td>
+      <td>0</td>
       <td>40</td>
+      <td>United-States</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>28</td>
+      <td>Private</td>
+      <td>338409</td>
+      <td>Bachelors</td>
+      <td>13</td>
+      <td>Married-civ-spouse</td>
+      <td>Prof-specialty</td>
+      <td>Wife</td>
+      <td>Black</td>
+      <td>Female</td>
+      <td>0</td>
+      <td>0</td>
+      <td>40</td>
+      <td>Cuba</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>31</td>
+      <td>Private</td>
+      <td>45781</td>
+      <td>Masters</td>
+      <td>14</td>
+      <td>Never-married</td>
+      <td>Prof-specialty</td>
+      <td>Not-in-family</td>
+      <td>White</td>
+      <td>Female</td>
+      <td>14084</td>
+      <td>0</td>
+      <td>50</td>
+      <td>United-States</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>42</td>
+      <td>Private</td>
+      <td>159449</td>
+      <td>Bachelors</td>
+      <td>13</td>
+      <td>Married-civ-spouse</td>
+      <td>Exec-managerial</td>
+      <td>Husband</td>
+      <td>White</td>
+      <td>Male</td>
+      <td>5178</td>
+      <td>0</td>
+      <td>40</td>
+      <td>United-States</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>25</td>
+      <td>Self-emp-not-inc</td>
+      <td>176756</td>
+      <td>HS-grad</td>
+      <td>9</td>
+      <td>Never-married</td>
+      <td>Farming-fishing</td>
+      <td>Own-child</td>
+      <td>White</td>
+      <td>Male</td>
+      <td>0</td>
+      <td>0</td>
+      <td>35</td>
       <td>United-States</td>
     </tr>
   </tbody>
@@ -15170,23 +15170,23 @@ a.anchor-link {
   </thead>
   <tbody>
     <tr>
-      <th>10</th>
-      <td>&gt;50K</td>
-    </tr>
-    <tr>
-      <th>14</th>
-      <td>&gt;50K</td>
-    </tr>
-    <tr>
-      <th>15</th>
+      <th>2</th>
       <td>&lt;=50K</td>
     </tr>
     <tr>
-      <th>22</th>
+      <th>4</th>
       <td>&lt;=50K</td>
     </tr>
     <tr>
-      <th>23</th>
+      <th>8</th>
+      <td>&gt;50K</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>&gt;50K</td>
+    </tr>
+    <tr>
+      <th>16</th>
       <td>&lt;=50K</td>
     </tr>
   </tbody>
