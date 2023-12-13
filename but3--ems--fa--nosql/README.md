@@ -13,7 +13,7 @@ Planning prévu :
     - 30/11 : matin cours SAE (-> évaluation NoSQL) + après-midi cours SAE (suite séance 3)
     - 14/12 : après-midi projet (application sur le sujet de la SAE)
     - 11/01 : matin cours (-> SAE suivi - commune avec 32) + après-midi projet (application sur le sujet de la SAE)
-    - 12/01 : matin cours (???)
+    - 12/01 : matin cours (Neo4j base)
     - 25/01 : journée projet (finalisation SAE)
 - Groupe 32 ->
     - 21/09 : Projet toute la journée (suite maladie - travail SQL)
@@ -23,7 +23,7 @@ Planning prévu :
     -
     - 17/11 : projet le matin (application sur le sujet de la SAE)
     - 14/12 : matin cours SAE (-> séance 4) + après-midi cours NoSQL (évaluation NoSQL)
-    - 11/01 : matin projet (-> SAE suivi - commune avec 31) + après-midi cours (???)
+    - 11/01 : matin projet (-> SAE suivi - commune avec 31) + après-midi cours (Neo4j base)
     - 22/01 : matin projet (finalisation SAE)
 %
 A ORGANISER COMME SUIT :
