@@ -22,6 +22,16 @@
 - M1 AMSD/MLSD : système de base (user par exemple) à revoir + GIT peut-être
 - BUT2 TC Cherbourg : refondre totalement le cours en faisant 30 minutes de cours + 1h d'application à chaque fois
     - Tout en salle machine peut-être ?
+    - A maîtriser sur EXCEL :
+        - Nouvelle colonne, opérations classiques (+ - * /)
+        - Référence à une autre feuille
+        - SI()
+        - MOYENNE(), VARIANCE(), ECARTYPE() (A REVOIR), SOMME() ?
+        - NBVAL(), NB(), NB.SI(), NB.SI.ENS()
+        - MOYENNE.SI()
+        - Tableau Croisé Dynamique !
+        - Graphique
+    - Idée = une séance sur les probabilités conditionnelles avec application sur EXCEL
 - BUT3 SD Paris :
     - NoSQL / SAE : organisation à revoir
     - 
