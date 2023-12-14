@@ -18,7 +18,19 @@
 
 # Pour 2024-2025
 
-- M1 DCI : partie régression logistique à revoir complètement
+- M1 DCI : 
+    - Soit je garde le supervisé et partie régression logistique à revoir complètement
+    - Soit je supprime le supervisé et je fait :
+        1. Intro Python
+        2. Manipulation "à la SQL"
+        3. Statistique et visualisation de données (univarié et bivarié)
+        4. ACP
+        5. AFC
+        6. MDS et autre (?)
+        7. k-means et CAH
+        8. DBSCAN, SOM et autre ?
+        9. Application sur données réelles
+        10. Evaluation
 - M1 AMSD/MLSD : système de base (user par exemple) à revoir + GIT peut-être
 - BUT2 TC Cherbourg : refondre totalement le cours en faisant 30 minutes de cours + 1h d'application à chaque fois
     - Tout en salle machine peut-être ?
