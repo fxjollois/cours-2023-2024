@@ -25,9 +25,12 @@
 9. [TP blanc](seance9-tp-blanc.html) : sujet de l'année denière
     - [correction](seance9-correction.html)
 
+
+- [Sujet du TP](tp-note.html)
+
+
 <!--
 
-- [Sujet du TP](sujet-tp.html)
 
 -->
 
