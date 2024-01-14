@@ -7,7 +7,11 @@ Ce site regroupe l'ensemble des documents que j'utilise dans mes cours pour l'an
 - [BUT SD 2ème année - Parcours VCOD - Collecte de données](but2--vcod--fa--collecte)
 
 - [BUT SD 3ème année - Parcours VCOD - NoSQL](but3--vcod--fa--nosql)
+- [BUT SD 3ème année - Parcours VCOD - SAE Outils Décisionnels](but3--vcod--fa--sae-finale)
+
 - [BUT SD 3ème année - Parcours EMS - NoSQL](but3--ems--fa--nosql)
+
+- [DU Analyste Big Data - Python et MongoDB](du-ads--python-mongo)
 
 ## Master Université Paris Cité
 
