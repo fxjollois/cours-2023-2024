@@ -18,6 +18,8 @@
 
 # Pour 2024-2025
 
+- POUR TOUS : BEAUCOUP DE PETITES EVALUATIONS (TYPE QCM) POUR NE PAS AVOIR DE RATTRAPAGE !!
+
 - M1 DCI : 
     - Soit je garde le supervisé et partie régression logistique à revoir complètement
     - Soit je supprime le supervisé et je fait :
@@ -44,6 +46,6 @@
         - Tableau Croisé Dynamique !
         - Graphique
     - Idée = une séance sur les probabilités conditionnelles avec application sur EXCEL
-- BUT3 SD Paris :
+- BUT SD Paris :
     - NoSQL / SAE : organisation à revoir
     - 
