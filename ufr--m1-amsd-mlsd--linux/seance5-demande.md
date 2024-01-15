@@ -104,7 +104,7 @@ $ sudo apt install libssl-dev libsasl2-dev
 > install.packages("mongolite")
 ```
 
-- Suivre le [tutoriel R et Mongo](seance6-r)
+- Suivre le [tutoriel R et Mongo](seance5-r)
 
 ## Utilisation dans Python
 
@@ -113,7 +113,7 @@ $ sudo apt install libssl-dev libsasl2-dev
 $ pip3 install pymongo
 ```
 
-- Suivre le [tutoriel Python et Mongo](seance6-python)
+- Suivre le [tutoriel Python et Mongo](seance5-python)
 
 --
 ## Questions sur les restaurants new-yorkais
