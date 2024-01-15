@@ -32,6 +32,6 @@
 
 Lien vers une machine virtuelle opérationnelle :
 
-<https://cloud.parisdescartes.fr/index.php/s/5P8qLecdH4JpPig>
+<https://cloud.parisdescartes.fr/index.php/s/5bqycLmKyEkWQ9S>
 
 A importer dans Virtual Box (ou autre logiciel de virtualisation)
