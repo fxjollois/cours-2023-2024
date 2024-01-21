@@ -20,6 +20,7 @@
     - [tutoriel R](seance5-r)
     - [demande](seance5-demande)
     
+- [Séance 6](seance6) : Mini-projet *Tableaux de bord sur données temps réel*
 <!--
 --- 3 séances projet : création VM + tout le reste
 - Séance 3 : gestion des scripts R et python et début des demandes pour mini-projet
