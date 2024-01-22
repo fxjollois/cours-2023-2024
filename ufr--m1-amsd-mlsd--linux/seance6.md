@@ -4,6 +4,13 @@
 
 ### Mini-projet *Tableaux de bord temps réel*
 
+**DEADLINE** : **25 FEVRIER 23h59**
+
+**RENDU** : <https://cloud.parisdescartes.fr/index.php/s/K8Hkn5wqLqQyCHN>
+
+- *Fichier compressé* (`zip` ou `tar.gz`) avec les noms des étudiants dans le nom de fichier
+- Bien mettre les noms des étudiants dans le rapport
+
 #### Demande à réaliser
 
 ## Sujet
@@ -54,7 +61,7 @@ A partir de sources de données temps réel, vous devez récupérer les données
 
 - Rapport
     - Problématique choisie
-        - Quel sujet ? Avec quelle approche ? Quels analyses à prévoir
+        - Quel sujet ? Avec quelle approche ? Quelles analyses à prévoir ?
     - Sources de données (ainsi que leur modèle)
         - Comment sont structurées les sources ? Qu'est-ce qu'il y a dedans comme informations ?
         - Comment y a t'on accès ? 
