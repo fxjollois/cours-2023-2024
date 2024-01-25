@@ -11,7 +11,7 @@ Pour lire le fichier `StockEtablissement`, nous utilisons la librarie `pandas`
 ```python
 import pandas
 
-sirene = pandas.read_csv("StockEtablissement_utf8.csv", nrows = 10)
+sirene = pandas.read_csv("StockEtablissement_utf8_1000.csv", nrows = 10)
 sirene
 ```
 
