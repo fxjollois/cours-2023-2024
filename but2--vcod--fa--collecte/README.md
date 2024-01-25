@@ -18,7 +18,8 @@ A partir des données de la [base SIRENE](https://www.data.gouv.fr/fr/datasets/b
 
 - Fichier de départ très lourd (**6,84 Go**) donc à ne pas charger en une fois !
     - Développer le code sur 50 ou 100 lignes (pas forcément les premières)
-- Appel à l'API à modérer (limite de 50 requêtes par seconde et par IP pour le géocodage simple via l’API Adresse - tous les ordinateurs de l'IUT ont la même adresse IP en sortie)
+    - [Fichier avec les 1000 premières lignes](StockEtablissement_utf8_1000.csv)
+- Appel à l'API Adresse à modérer (limite de 50 requêtes par seconde et par IP pour le géocodage simple via l’API Adresse - tous les ordinateurs de l'IUT ont la même adresse IP en sortie)
     - Utilisation de `time.sleep(1)` (ne pas oublier `import time`) pour retarder d'une seconde ce qui suit
 - Rendu au format `zip`, contenant un fichier de code (`.ipynb`) et un court rapport expliquant la démarche et les problèmes rencontrés, à déposer sur cette adresse : 
 
