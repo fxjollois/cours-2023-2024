@@ -73,13 +73,12 @@ Dans notre cas, il y a plusieurs résultats. Généralement, le premier est celu
 
 ### Première étape : configurer le navigateur 
 
-Si vous faites cela bien, `chromedriver` est dans le même répertoire que votre notebook
+Vous devez placer `chromedriver` dans le même répertoire que votre notebook
 
 ```python
 from selenium import webdriver
 
-chromedrive_path = './chromedriver' # chemin vers votre exécutable 
-driver = webdriver.Chrome(chromedrive_path)
+driver = webdriver.Chrome()
 ```
 
 #### Création de l'URL à récupérer
@@ -95,12 +94,16 @@ url
 
 ### Deuxième étape : récupération du contenu HTML
 
-- Lors de la première exécution de ce code, une fenêtre va s'ouvrir dans laquelle vous devrez cliquer (a priori sur "Tout accepter")
+- Lors de l'exécution de ce code, une fenêtre va s'ouvrir dans laquelle vous devrez cliquer (a priori sur "Tout accepter")
 - **NE PAS FERMER CETTE FENETRE !**
-- Relancer le code une deuxième fois pour effectivement récupérer le contenu désiré
 
 ```python
 driver.get(url)
+```
+
+- Lancer le code suivant pour effectivement récupérer le contenu désiré
+
+```python
 html = driver.page_source
 ```
 
@@ -121,7 +124,13 @@ results = soup.select("a[aria-label*='Site Web']")
 results
 ```
 
-- Dernière étape : une fois qu'on a récupéré tout ce qu'on souhaite, on ferme correctement le navigateur
+Pour avoir exactement l'adresse, on récupère le texte du premier résultat obtenu précédemment
+
+```python
+results[0].text
+```
+
+### Dernière étape : une fois qu'on a récupéré tout ce qu'on souhaite, on ferme correctement le navigateur
 
 ```python
 driver.close()
