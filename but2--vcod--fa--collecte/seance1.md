@@ -130,6 +130,12 @@ Pour avoir exactement l'adresse, on récupère le texte du premier résultat obt
 results[0].text
 ```
 
+Mais on peut aussi vouloir récupérer le lien web (dans `href`)
+
+```python
+results[0]["href"]
+```
+
 ### Dernière étape : une fois qu'on a récupéré tout ce qu'on souhaite, on ferme correctement le navigateur
 
 ```python
