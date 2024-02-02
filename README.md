@@ -4,7 +4,7 @@ Ce site regroupe l'ensemble des documents que j'utilise dans mes cours pour l'an
 
 ## IUT Paris-Rives de Seine
 
-- [BUT SD 2ème année - Parcours VCOD - Collecte de données](but2--vcod--fa--collecte)
+- [BUT SD 2ème année - Parcours VCOD - SAE Collecte automatisée de données web](but2--vcod--fa--collecte)
 
 - [BUT SD 3ème année - Parcours VCOD - NoSQL](but3--vcod--fa--nosql)
 - [BUT SD 3ème année - Parcours VCOD - SAE Outils Décisionnels](but3--vcod--fa--sae-finale)
