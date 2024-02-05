@@ -32,7 +32,7 @@ class: section, middle, center
 
 - Dédié à la création de tableaux de bord (mais pas que)
 
-- Ajout d'élèments visuels intéressants (cadres pour valeurs importanges, ensemble d'onglets...)
+- Ajout d'élèments visuels intéressants (cadres pour valeurs importantes, ensemble d'onglets...)
 
 - Basé sur le framework JS [AdminLTE](https://github.com/almasaeed2010/AdminLTE)
     - Exemples visibles sur [AdminLTE.io](https://adminlte.io/themes/v3/)
@@ -209,7 +209,7 @@ infoBox(
 ```r
 valueBox(
     value = "12,34",
-    subtitle = "Volume totale des ventes (en milliards)",
+    subtitle = "Volume total des ventes (en milliards)",
     icon = icon("usd"),
     color = "green",
     width = 4
@@ -361,14 +361,14 @@ dashboardSidebar(
 dashboardBody(
   tabItems(
     tabItem(
-      tabName = "vue",
+      tabName = "vue1",
       box( ... ),
       infoBox( ... ),
       valueBox( ... ),
       tabBox( ... )
     ),
     tabItem(
-      tabName = "top",
+      tabName = "vue2",
       box(title = "Infos 1", width = 4, "un graphique"),
       box(title = "Infos 2", width = 4, "un tableau de valeur"),
       box(title = "Infos 3", width = 4, "un autre graphique")
@@ -437,7 +437,7 @@ via la librairie [`htmltools`](https://rstudio.github.io/htmltools/)
 
 --
 
-### Pour aller plus loin : `tags()`
+### Pour aller plus loin : `tag()`
 
 Fonction créant un élèment HTML avec une balise passée en paramètre
 
@@ -545,7 +545,7 @@ Utilisation de la fonction `conditionalPanel()`
 
 ```r
 conditionalPanel(
-    condition = "input$choix == 'Fichier texte'",
+    condition = "input.choix == 'Fichier texte'",
     fileInput("fichier")
 )
 ```
