@@ -50,7 +50,11 @@ ui = dashboardPage(
   dashboardBody(
     valueBox(textOutput("nbLig"), subtitle = "Lignes", width = 6, icon = icon("grip-lines")),
     valueBox(textOutput("nbCol"), subtitle = "Colonnes", width = 6, icon = icon("grip-lines-vertical")),
-    DT::dataTableOutput("table")
+    box(
+        title = "Contenu du data.frame",
+        width = 12,
+        DT::dataTableOutput("table")
+    )
   ),
   title = "Correction"
 )
