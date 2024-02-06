@@ -8,5 +8,6 @@
 
 - [Séance Widgets](seance-widgets) : Shiny - Widgets HTML
     - [demande](seance-widgets-demande)
+    - [correction](seance-widgets-correction) ([fichier R directement](seance-widgets-correction.R))
 
 
