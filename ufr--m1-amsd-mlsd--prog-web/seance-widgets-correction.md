@@ -84,7 +84,7 @@ shinyApp(
                                fixedColumns = list(leftColumns = 1),
                                searching = FALSE,
                                lengthChange = FALSE,
-                               pageLength = 20)
+                               pageLength = 16)
                 ) %>%
         formatPercentage("Evolution") %>%
         formatCurrency("Volume", currency = " €", mark = " ", digits = 0, before = FALSE) %>%
@@ -120,7 +120,7 @@ shinyApp(
       if (length(txgeo_sel) > 0) {
         leaflet(txgeo_sel) %>%
           addProviderTiles(providers$CartoDB.Positron) %>%
-          addPolygons(fillColor = "darkred", fillOpacity = .8, color = "lightgray", weight = 5, label = ~name)
+          addPolygons(fillColor = "darkred", fillOpacity = .8, color = "lightgray", weight = 1, label = ~name)
       }
     })
     
@@ -142,7 +142,7 @@ shinyApp(
         addProviderTiles(providers$CartoDB.Positron) %>%
         addPolygons(fillColor = ~pal(var), 
                     fillOpacity = .9, 
-                    color = "lightgray", weight = 5,
+                    color = "lightgray", weight = 1,
                     label = ~city) %>%
         addLegend(pal = pal, values = ~var, opacity = 1.0,
                   title = titre,
