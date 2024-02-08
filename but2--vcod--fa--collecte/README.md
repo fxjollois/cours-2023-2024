@@ -49,3 +49,4 @@ Fin Tant Que
 ## Séances
 
 - [Premiers éléments de collecte de données sur le web](seance1)
+- [Interrogation de l'API Adresse par fichier `CSV`](seance2)
