@@ -29,7 +29,7 @@ resume = txhousing %>%
                          evol = ifelse(evol == Inf, NA, evol)))
 
 txgeo@data$city = sub(", TX", "", txgeo@data$name)
-txgeo@data = dplyr::left_join(txgeo@data, resume, all.x = TRUE)
+txgeo@data = dplyr::left_join(txgeo@data, resume)
 
 
 shinyApp(
