@@ -17,7 +17,7 @@ r.text # contenu du résultat dans un format CSV
 Une fois le résultat obtenu, on peut le sauvegarder dans un fichier texte, avec l'extension `csv` par exemple. Le paramètre `encoding` permet de gérer l'encodage (UTF-8 est souvent à préférer, pour information).
 
 ```python
-fichier_resultat = open("export_for_search_results.csv", "w", encoding="utf-8")
+fichier_resultat = open("export_for_search_results.csv", "w", encoding = "utf-8")
 fichier_resultat.write(r.text)
 fichier_resultat.close()
 ```
