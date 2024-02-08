@@ -57,8 +57,8 @@
         8. [QCM sur estimation] + Application sur données réelles 1 (séance 7)
         9. Application sur données réelles 2 (séance 8)
         10. [TP noté] final (reprendre celui fait)
-- BUT SD Paris :
-    - NoSQL / SAE : organisation à revoir
+- BUT SD Paris - NoSQL / SAE
+    - organisation à revoir
     - 21h de ressources + 9h de formation en SAE + 10h de projets
     - 30h donc 10 séances de 3h
         - Séance 1 (RES) : Intro NoSQL + Premier pas Mongo 
@@ -88,5 +88,9 @@
             - 3h/groupe :  Intégration des requêtes dans un process type dashboard
         - Semaine 5 (3h/groupe - 3h RES)
             - 3h/groupe :  TP noté
-     
+- BUT SD Paris - SAE Collecte
+    - A revoir en mode plus accompagné
+        - Séance 1 : importation par paquet du fichier de donner et ajout d'une variable adresse = numero + indice + type + libelle
+        - Séance 2 : interrogation par fichier CSV pour récupération des coordonnées géographiques
+        - Séance 3 : ???
       
