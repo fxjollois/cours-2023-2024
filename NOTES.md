@@ -59,6 +59,7 @@
         10. [TP noté] final (reprendre celui fait)
 - BUT SD Paris :
     - NoSQL / SAE : organisation à revoir
+    - TRAVAIL SUR DE GROSSES BASES DE DONNEES A PREVOIR (au moins pour test)
     - 21h de ressources + 9h de formation en SAE + 10h de projets
     - 30h donc 10 séances de 3h
         - Séance 1 (RES) : Intro NoSQL + Premier pas Mongo 
@@ -71,6 +72,20 @@
         - Séance 8 (SAE) : NoSQL -> SQL (ou l'inverse)
         - Séance 9 (RES) : Intégration des requêtes dans un process type dashboard
         - Séance 10 (RES) : TP noté
+    - Implémentation intense (1 demi-journée par groupe)
+        - Semaine 1
+            - Jour 1 (RES + SAE) : Intro NoSQL + Présentation SAE 
+            - Jour 2 (RES) : Premier pas Mongo (count, distinct, find, importation)
+            - Jour 3 (RES) : Agrégats (dont jointure)
+            - Jour 4 (RES + SAE) : Réflexion modèle à prévoir | Evaluation courte
+        - Semaine 2
+            - Jour 1 (RES) : Récapitulatif
+            - Jour 2 (SAE) : Passage SQL -> NoSQL
+            - Jour 3 (SAE) : Passage NoSQL -> SQL
+            - Jour 4 (RES) : Evaluation
+        - Semaine 3 :
+            - Jour 1 (RES) : Intégration des requêtes dans un process type dashboard
+            - Jour 2 (RES) : Evaluation
     - Implémentation autre (pour un parcours)
         - Semaine 1 (7h30/groupe - 6h RES + 1h30 SAE)
             - Matin (RES + SAE - promo entière) : 1h30 Intro NoSQL + 1h30 Présentation SAE
