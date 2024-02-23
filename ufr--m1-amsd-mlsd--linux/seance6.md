@@ -4,7 +4,7 @@
 
 ### Mini-projet *Tableaux de bord temps réel*
 
-**DEADLINE** : **25 FEVRIER 23h59**
+**DEADLINE** : **3 MARS 23h59**
 
 **RENDU** : <https://cloud.parisdescartes.fr/index.php/s/K8Hkn5wqLqQyCHN>
 
