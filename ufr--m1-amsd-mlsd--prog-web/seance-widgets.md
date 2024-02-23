@@ -413,7 +413,7 @@ formattable(
   resume, 
   list(
     volume = format_vol,
-    volumeEuro = color_tile("", "darkgreen"),
+    volumeEuro = color_tile("yellow", "darkgreen"),
     part = color_bar("orange")
   )
 )
