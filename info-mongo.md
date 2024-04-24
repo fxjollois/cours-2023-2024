@@ -107,7 +107,6 @@ Le code ci-dessous permet de lire les données dans le fichier JSON puis de les 
 ```python
 import pymongo
 import json
-from copy import deepcopy
 from datetime import datetime
 
 data = json.load(open("listingsAndReviews.json", "r"))
@@ -123,4 +122,5 @@ for i in range(len(airbnb)):
 client = pymongo.MongoClient()
 db = client.test
 db.airbnb.insert_many(data)
+client.close()
 ```
