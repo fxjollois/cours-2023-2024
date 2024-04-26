@@ -11,7 +11,7 @@ Ce site regroupe l'ensemble des documents que j'utilise dans mes cours pour l'an
 
 - [BUT SD 3ème année - Parcours EMS - NoSQL](but3--ems--fa--nosql)
 
-- [DU Analyste Big Data - Python et MongoDB](du-ads--python-mongo)
+- [DU Analyste Data Science - Python et MongoDB](du-ads--python-mongo)
 
 ## Master Université Paris Cité
 
