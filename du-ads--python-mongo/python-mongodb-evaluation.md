@@ -3,7 +3,7 @@
 
 ## Rendu
 
-Espace de dépôt du travail (notebook `ipynb` - avec votre nom dans le nom du fichier) [ ** DEADLINE LE 31 MAI - 23h59 ** ]:
+Espace de dépôt du travail (notebook `ipynb` - avec votre nom dans le nom du fichier) [ **DEADLINE LE 31 MAI - 23h59** ]:
 
 <https://cloud.parisdescartes.fr/index.php/s/Qdq7nibJq9bmZQw>
 
