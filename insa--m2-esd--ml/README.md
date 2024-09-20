@@ -26,17 +26,12 @@ Ces méthodes couvriront les problématiques de description statistique des donn
     - [Introduction - étude de cas](intro.slides.html) 
         - [Base sur Python](base-python.html) 
         - [Demande](base-demande.html)
-            - [Correction](base-correction.html)
     - [Analyse en Composantes Principales](acp-cours.html)
         - [Utilisation sous Python](acp-python.slides.html) 
         - [Demande](acp-demande.html)
-            - [Correction Wine](acp-demande1-correction.html)
-            - [Correction WGI](acp-demande2-correction.html)
-            - [Correction HadCRUT](acp-demande3-correction.html)
     - [Analyse Factorielles des Correspondances](afc-cours.html)
         - [Utilisation sous Python](afc-python.slides.html) 
         - [Demande](afc-demande.html)
-            - [Correction INSEE](afc-demande-correction.html)
 
 - Journée 2 : 
     - [Clustering avec CAH et *k*-means](classif-cours.html) 
@@ -44,9 +39,6 @@ Ces méthodes couvriront les problématiques de description statistique des donn
         - [*k*-means sous Python](kmeans-python.slides.html) 
         - [DBSCAN sous Python](dbscan-python.slides.html) 
         - [Demande](classif-demande.html)
-            - [Correction Wine](classif-demande1-correction.html)
-            - [Correction WGI](classif-demande2-correction.html)
-            - [Correction Spotify](classif-demande3-correction.html)
     - Tout ensemble
 
 - Journée 3 :
@@ -55,9 +47,6 @@ Ces méthodes couvriront les problématiques de description statistique des donn
         - [AFC sur données quantitatives](afc-quanti.slides.html)
         - [Classification sur facteurs de l'ACP](classif-sur-acp.slides.html)
     - [TP récapitulatif](tp-recap.html)
-        - [Correction](tp-recap-correction.html)
-    - [Sujet TP noté](tp-note.html)
-        - [Aide pour l'importation](tp-note-import.html)
 
 <!--
     - [Sujet TP noté](tp-note.html)
